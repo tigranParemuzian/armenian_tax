@@ -1,0 +1,13 @@
+{% extends 'SonataAdminBundle:CRUD:base_edit.html.twig' %}
+
+{% block form %}
+    <div>
+        {% if object.image != "https:undefined" %}
+            <a href="{{object.wikiPage}}" target="_blank">
+                <img src="{{object.image}}" width="150" />
+            </a>
+        {% endif %}
+    </div>
+
+    {{ block('parentForm') }}
+{% endblock %}

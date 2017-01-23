@@ -1,0 +1,123 @@
+{% extends '::base.html.twig' %}
+{% block title %}
+    Statistic Page
+{% endblock %}
+
+{% block body %}
+<div class="row" style="text-align: center">
+    <div class="col-lg-12">
+        <div class="panel panel-blue">
+            <div class="panel-heading">Latest scan</div>
+            <div class="panel-body">
+            {% if different > 5 %}
+                <div style="color: red" >
+                    {% if diffDay > 0 %} {{ diffDay }} day  {{ diffHour }} hour
+                    {% elseif diffHour > 0%} {{ diffHour }} hour {% endif %}
+                    {{ diffMinute }} minutes ago
+                </div>
+            {% else %}
+                <div style="color: limegreen" >{{ different }} minutes a go</div>
+            {% endif %}
+                <div style="color: limegreen">Total count   {{ crawlerCount }}</div>
+                <div style="color: limegreen">Average count   {{ crawlerAverage }}</div>
+                <div id="statistic" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                        <div style="color: limegreen">Total count   {{ publishCount }}</div>
+                        <div style="color: limegreen">Average count   {{ publishAverage }}</div>
+                <div id="published" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                <table class="table ">
+                {% for name,count in perUser %}
+                    <tr {% if name == 'Total' %}class="danger"{% else %}class="info"{% endif %}>
+                        <th style="text-align: center" >{{ name }}</th>
+                        <td >{{ count }}</td>
+                    </tr>
+                {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('jquery_components/highcharts/highcharts.js') }}"></script>
+    <script src="{{ asset('jquery_components/highcharts/modules/exporting.js') }}"></script>
+    <script>
+        $(function () {
+            $('#statistic').highcharts({
+                title: {
+                    text: 'Statistic ',
+                    x: -20 //center
+                },
+                xAxis: {
+                    categories: [
+                        {% for object in result %}
+                            '{{ object['dates']|date('M d') }}',
+                        {% endfor %}
+                    ]
+                },
+                yAxis: {
+
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808000'
+                    }]
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: 'Statistic Line',
+                    data: [
+                        {% for object in result %}
+                        {{ object['counts'] }},
+                        {% endfor %}
+                    ]
+                }],
+            });
+            $('#published').highcharts({
+                title: {
+                    text: 'Published ',
+                    x: -20 //center
+                },
+                xAxis: {
+                    categories: [
+                {% for oll in ollDates %}
+                '{{ oll }}',
+                {% endfor %}
+                ]},
+                yAxis: {
+
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808000'
+                    }]
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [
+                        {% for userName in userNames  %}
+                    {
+                    name: '{{ userName }}',
+                    data: [
+                        {% for object in published %}
+                        {{ object[userName]['counts'] }},
+                        {% endfor %}
+                    ]
+                    },{% endfor %}
+                ]
+
+            });
+        });
+    </script>
+{% endblock %}

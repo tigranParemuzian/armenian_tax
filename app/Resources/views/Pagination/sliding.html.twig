@@ -1,0 +1,40 @@
+{# default Sliding pagination control implementation #}
+
+{% if pageCount > 1 %}
+<div class="pagination">
+    {% if first is defined and current != first %}
+        <button class="first">
+            <a href="{{ path(route, query|merge({(pageParameterName): first})) }}">&lt;&lt;</a>
+        </button>
+    {% endif %}
+
+    {% if previous is defined %}
+        <button class="previous">
+            <a href="{{ path(route, query|merge({(pageParameterName): previous})) }}">&lt;</a>
+        </button>
+    {% endif %}
+
+    {% for page in pagesInRange %}
+        {% if page != current %}
+            <button class="page">
+                <a href="{{ path(route, query|merge({(pageParameterName): page})) }}">{{ page }}</a>
+            </button>
+        {% else %}
+            <button class="current">{{ page }}</button>
+        {% endif %}
+
+    {% endfor %}
+
+    {% if next is defined %}
+        <button class="next">
+            <a href="{{ path(route, query|merge({(pageParameterName): next})) }}">&gt;</a>
+        </button>
+    {% endif %}
+
+    {% if last is defined and current != last %}
+        <button class="last">
+            <a href="{{ path(route, query|merge({(pageParameterName): last})) }}">&gt;&gt;</a>
+        </button>
+    {% endif %}
+</div>
+{% endif %}

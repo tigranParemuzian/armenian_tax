@@ -1,0 +1,12 @@
+services:
+    app.admin.rx_path:
+        class: AppBundle\Admin\RXPathAdmin
+        arguments: [~, AppBundle\Entity\RXPath, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: RXPath}
+
+    app.admin.pattern:
+        class: AppBundle\Admin\PatternAdmin
+        arguments: [~, AppBundle\Entity\Pattern, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Pattern}

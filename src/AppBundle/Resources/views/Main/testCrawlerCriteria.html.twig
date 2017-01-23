@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Selectors{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-7">
+            <form class="navbar-form navbar-left" role="search" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="page_url" class="form-control" placeholder="Url" style="width: 300px">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                <a href="{{ path('admin_app_pattern_list') }}" class="btn btn-default">PATTERN ADMIN</a>
+
+            </form>
+        </div>
+
+        <div class="col-md-5">
+            {% if patterns is defined and patterns is not null %}
+                {% for pattern in patterns %}
+                    <strong style="line-height: 18px;display:block;padding:15px 0;">
+                        <h2>Item Type:</h2> {{ pattern.name }}
+                        <h3>Name:</h3> {{ patternData[pattern.name]['name'] }}
+                        <br>
+                        <img src="{{ patternData[pattern.name]['picture'] }}">
+                        {% if patternData[pattern.name]['data'] is defined and patternData[pattern.name]['data'] is not null %}
+                            <br/><br/><h2>Pattern Data :</h2>
+                            {% for k, v in patternData[pattern.name]['data'] %}
+                                <p>{{ k }}: {{ v }}</p>
+                            {% endfor %}
+                        {% endif %}
+
+                        {% if patternData[pattern.name]['relations'] is defined and patternData[pattern.name]['relations'] is not null %}
+                            <h2>Pattern Relations :</h2>
+                            {% for relation in patternData[pattern.name]['relations'] %}
+                                <p>{{ relation['type'] }}: {{ relation['html'] }}</p>
+                            {% endfor %}
+                        {% endif %}
+                        {% if patternData[pattern.name]['tag'] is defined and patternData[pattern.name]['tag'] is not null %}
+                            <h2>Pattern Tags :</h2>
+                            {% for tag in patternData[pattern.name]['tag'] %}
+                                <p>Name: {{ tag['name'] }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </strong>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

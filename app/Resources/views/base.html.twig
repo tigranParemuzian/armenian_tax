@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="Thu, 19 Nov 1900 08:52:00 GMT">
+        <link rel="shortcut icon" href="images/icons/favicon.ico">
+        <link rel="apple-touch-icon" href="images/icons/favicon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+        <!--Loading bootstrap css-->
+        <link type="text/css" rel="stylesheet"
+              href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+        <link type="text/css" rel="stylesheet"
+              href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+<div id="header-topbar-option-demo" class="page-header-topbar">
+    {% block menu %}
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Armenian Tax</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li class="">
+                        <a href="{{ path('upload') }}">Upload xlm<span class="sr-only">(current)</span></a></li>
+                    <li><a href="{{ path('fos_user_registration_register') }}">Create User</a></li>
+                    <li><a href="{{ path('list') }}">Listing</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Profile
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Analytics</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div id="wrapper">
+        <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+            <div class="sidebar-collapse menu-scroll">
+                <ul id="side-menu" class="nav">
+                    <li class="user-panel">
+                    </li>
+                    {#{{ knp_menu_render('AppBundle:Builder:topMenu', { 'template': 'Menu/knp_menu.html.twig', 'currentAsLink': false, 'id':'navigation'}) }}#}
+                    <!--li.charts-sum<div id="ajax-loaded-data-sidebar"></div>-->
+                </ul>
+            </div>
+        </nav>
+
+        {% endblock %}
+        <div id="page-wrapper"><!--BEGIN TITLE & BREADCRUMB PAGE-->
+
+            {% for flashMessage in app.session.flashbag.get('error') %}
+                <div class="alert alert-danger" role="alert">{{ flashMessage }}</div>
+            {% endfor %}
+
+            {% for flashMessage in app.session.flashbag.get('warning') %}
+                <div class="alert alert-warning" role="alert">{{ flashMessage }}</div>
+            {% endfor %}
+
+            {% for flashMessage in app.session.flashbag.get('success') %}
+                <div class="alert alert-success" role="alert">{{ flashMessage }}</div>
+            {% endfor %}
+
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+    {% block javascripts %}
+        <script src="{{ asset('jquery_components/jquery/dist/jquery.min.js') }}"></script>
+        <script src="{{ asset('jquery_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        <!--CORE JAVASCRIPT-->
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,107 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <!--Wiki admin-->
+        <service id="sonata.admin.wikipage" class="AppBundle\Admin\WikiPageAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Wiki" label="Page"/>
+            <argument />
+            <argument>AppBundle\Entity\WikiPage</argument>
+            <argument />
+        </service>
+
+        <!--Item admin-->
+        <service id="sonata.admin.item" class="AppBundle\Admin\ItemAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Item" label="Item"/>
+            <argument />
+            <argument>AppBundle\Entity\Item</argument>
+            <argument />
+            <call method="setTemplate">
+                <argument>edit</argument>
+                <argument>AppBundle:Admin:list_image.html.twig</argument>
+            </call>
+        </service>
+
+        <!--ItemLink admin-->
+        <service id="sonata.admin.item_link" class="AppBundle\Admin\ItemLinkAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Item" label="Item Link"/>
+            <argument />
+            <argument>AppBundle\Entity\ItemLink</argument>
+            <argument />
+        </service>
+
+        <!--ItemType admin-->
+        <service id="sonata.admin.item_type" class="AppBundle\Admin\ItemTypeAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Item" label="Item Type"/>
+            <argument />
+            <argument>AppBundle\Entity\ItemType</argument>
+            <argument />
+        </service>
+
+        <!--ItemLinkType admin-->
+        <service id="sonata.admin.item_link_type" class="AppBundle\Admin\ItemLinkTypeAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Item" label="Item Link Type"/>
+            <argument />
+            <argument>AppBundle\Entity\ItemLinkType</argument>
+            <argument />
+        </service>
+
+        <!--Tag admin-->
+        <service id="sonata.admin.tag" class="AppBundle\Admin\TagAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Item" label="Tag"/>
+            <argument />
+            <argument>AppBundle\Entity\Tag</argument>
+            <argument />
+        </service>
+
+        <!--Project admin-->
+        <service id="sonata.admin.project" class="AppBundle\Admin\ProjectAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Project" label="Project"/>
+            <argument />
+            <argument>AppBundle\Entity\Project</argument>
+            <argument />
+        </service>
+
+        <!--SelectorRecognitionAdmin admin-->
+        <service id="sonata.admin.selector.recognition" class="AppBundle\Admin\SelectorRecognitionAdmin">
+            <tag name="sonata.admin" manager_type="orm" show_in_dashboard="false"/>
+            <argument />
+            <argument>AppBundle\Entity\Selector</argument>
+            <argument />
+        </service>
+
+        <!--SelectorRelationAdmin admin-->
+        <service id="sonata.admin.selector.relation" class="AppBundle\Admin\SelectorRelationAdmin">
+            <tag name="sonata.admin" manager_type="orm" show_in_dashboard="false"/>
+            <argument />
+            <argument>AppBundle\Entity\Selector</argument>
+            <argument />
+        </service>
+
+        <!--SelectorDataAdmin admin-->
+        <service id="sonata.admin.selector.data" class="AppBundle\Admin\SelectorDataAdmin">
+            <tag name="sonata.admin" manager_type="orm" show_in_dashboard="false"/>
+            <argument />
+            <argument>AppBundle\Entity\Selector</argument>
+            <argument />
+        </service>
+
+        <!--Pattern admin-->
+        <service id="sonata.admin.pattern" class="AppBundle\Admin\PatternAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Pattern" label="Pattern"/>
+            <argument />
+            <argument>AppBundle\Entity\Pattern</argument>
+            <argument />
+        </service>
+
+        <!--User admin-->
+        <service id="sonata.admin.user" class="AppBundle\Admin\UserAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="User" label="User"/>
+            <argument />
+            <argument>AppBundle\Entity\User</argument>
+            <argument />
+        </service>
+
+    </services>
+</container>

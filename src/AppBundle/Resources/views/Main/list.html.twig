@@ -1,0 +1,63 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th><div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Select All
+                                </label>
+
+                            </div></th>
+                        <th>Status</th>
+                        <th>Author</th>
+                        <th>Created</th>
+                        <th>items</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for booking in bookings %}
+                        <tr>
+                            <th scope="row">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">{{ booking.id }}
+                                    </label>
+                                </div></th>
+                            <td>{% if booking.status == 1 %}
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                {% else %}
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                {% endif %}
+                            </td>
+                            <td>{{ booking.author }}</td>
+                            <td>{{ booking.created | date('Y-M-d') }}</td>
+                            <td>{{ booking.items_count }}</td>
+                            <td>
+                                <button class="btn btn-info">Info</button>
+                                <button class="btn btn-success">Edit</button>
+                                <button class="btn btn-warning">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                                <a href="{{ path('mah', {'bid':booking.id}) }}" type="button" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-open"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
