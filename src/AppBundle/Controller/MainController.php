@@ -289,10 +289,10 @@ class MainController extends Controller
 
         $bookings = $em->getRepository('AppBundle:Booking')->findForMah((int)$bid);
         $this->generateMah($bookings);
-        dump($bookings);
+/*//        dump($bookings);
         foreach($bookings->getItems() as $item){
-            dump($item); exit;
-        }
+//            dump($item); exit;
+        }*/
 
         return $this->redirect($this->generateUrl('list'));
     }
@@ -479,9 +479,11 @@ class MainController extends Controller
 
         }
 
+        $fileName = 'mah_' . str_replace(' ', '_', str_replace('.', '_', $booking->getHeader()->getIdentTaxCode()));
+
         $fs = new Filesystem();
-        $fs->touch($this->container->getParameter('kernel.root_dir').'/../web/uploads/files/file.xml');
-        $fs->dumpFile($this->container->getParameter('kernel.root_dir').'/../web/uploads/files/file.xml', $mah);
+        $fs->touch($this->container->getParameter('kernel.root_dir')."/../web/uploads/files/$fileName.xml");
+        $fs->dumpFile($this->container->getParameter('kernel.root_dir')."/../web/uploads/files/$fileName.xml", $mah);
 
         /*$fileName = 'exsp.xml';
         $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files';
