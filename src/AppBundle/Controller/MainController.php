@@ -479,7 +479,7 @@ class MainController extends Controller
 
         }
 
-        $fileName = 'mah_' . str_replace(' ', '_', str_replace('.', '_', $booking->getHeader()->getIdentTaxCode()));
+        $fileName = 'mah_' . str_replace(' ', '_', str_replace('.', '_', $booking->getId()));
 
         $fs = new Filesystem();
         $fs->touch($this->container->getParameter('kernel.root_dir')."/../web/uploads/files/$fileName.xml");
