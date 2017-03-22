@@ -132,6 +132,7 @@ class MainController extends Controller
                                 $item->setNetWeightItm($this->checkInfo($itemInfo->Valuation_item->Weight_itm->Net_weight_itm));
                                 $item->setRateOfAdjustement($this->checkInfo($itemInfo->Valuation_item->Rate_of_adjustement));
                                 $item->setStatisticalValue($this->checkInfo($itemInfo->Valuation_item->Statistical_value));
+                                $item->setAmountNationalCurrency($this->checkInfo($itemInfo->Valuation_item->item_external_freight->Amount_national_currency));
                                 $item->setSummaryDeclaration($this->checkInfo($itemInfo->Previous_doc->Summary_declaration));
                                 $item->setTotalCifItm($this->checkInfo($itemInfo->Valuation_item->Total_CIF_itm));
                                 $item->setTotalCostItm($this->checkInfo($itemInfo->Valuation_item->Total_cost_itm));
@@ -414,7 +415,7 @@ class MainController extends Controller
                         <designPayment1/>
                         <intellectualPropertyPayment/>
                         <sellerIncome/>
-                        <borderTransportCharges1>4962</borderTransportCharges1>
+                        <borderTransportCharges1>'.$item->getAmountNationalCurrency().'</borderTransportCharges1>
                         <loadCharges1/>
                         <additionalSumBorderPlace/>
                         <insuranceCharges1/>
@@ -484,21 +485,6 @@ class MainController extends Controller
         $fs = new Filesystem();
         $fs->touch($this->container->getParameter('kernel.root_dir')."/../web/uploads/files/$fileName.xml");
         $fs->dumpFile($this->container->getParameter('kernel.root_dir')."/../web/uploads/files/$fileName.xml", $mah);
-
-        /*$fileName = 'exsp.xml';
-        $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files';
-        $mainDir = str_replace('/app', '/', $this->container->getParameter('kernel.root_dir'));
-        //get corrent user
-        $username = $this->getUser()->getUsername();
-        // check isset file, file type is xls
-//        if (is_file($file) && in_array($file->getMimeType(), $xlsTypes))
-//        {
-            // move file to uploda directory
-            $file->move($brochuresDir, $fileName);
-
-            $file = $brochuresDir.'/'.$fileName;
-        $kernel = $container->getService('kernel');
-        $path = $kernel->locateResource('@AdmeDemoBundle/path/to/file/Foo.txt');*/
 
     }
 }
