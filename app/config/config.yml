@@ -10,8 +10,8 @@ parameters:
     locale: en
 
 framework:
-    ide: "phpstorm://open?file=%%f&line=%%l"
-    translator:      ~ #{ fallbacks: ["%locale%"] }
+     #esi:             ~
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -22,7 +22,6 @@ framework:
     #serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
-        #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_hosts:   ~
     trusted_proxies: ~
@@ -36,8 +35,11 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    date:
+        format: d.m.Y, H:i:s
+        interval_format: '%%d days'
     form:
-      resources: ['bootstrap_3_layout.html.twig']
+        resources: ['bootstrap_3_layout.html.twig']
 
 # Doctrine Configuration
 doctrine:

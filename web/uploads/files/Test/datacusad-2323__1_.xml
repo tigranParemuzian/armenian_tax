@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?><ESADout_CU:ESADout_CU xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:catESAD_cu="urn:customs.ru:CUESADCommonAggregateTypesCust:5.10.0" xmlns:cat_ru="urn:customs.ru:CommonAggregateTypes:5.10.0" xmlns:ESADout_CU="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.10.0" DocumentModeID="1006107E" xsi:schemaLocation="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.10.0 ESADout_CU.xsd">
+  <ESADout_CU:CustomsProcedure>IM</ESADout_CU:CustomsProcedure>
+  <ESADout_CU:CustomsModeCode>51</ESADout_CU:CustomsModeCode>
+  <ESADout_CU:RegNumberDoc>05100011/180517/0000280</ESADout_CU:RegNumberDoc>
+  <ESADout_CU:ExecutionDate>2017-05-18</ESADout_CU:ExecutionDate>
+  <ESADout_CU:ESADout_CUGoodsShipment>
+    <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+    <catESAD_cu:SpecificationNumber>7</catESAD_cu:SpecificationNumber>
+    <catESAD_cu:SpecificationListNumber>13</catESAD_cu:SpecificationListNumber>
+    <catESAD_cu:TotalGoodsNumber>6</catESAD_cu:TotalGoodsNumber>
+    <catESAD_cu:TotalPackageNumber>1</catESAD_cu:TotalPackageNumber>
+    <catESAD_cu:TotalSheetNumber>3</catESAD_cu:TotalSheetNumber>
+    <catESAD_cu:TotalCustCost>2282488</catESAD_cu:TotalCustCost>
+    <catESAD_cu:CustCostCurrencyCode>AMD</catESAD_cu:CustCostCurrencyCode>
+    <ESADout_CU:ESADout_CUConsignor>
+      <cat_ru:OrganizationName>SAS ALGO</cat_ru:OrganizationName>
+      <cat_ru:Address>
+        <cat_ru:PostalCode>11000</cat_ru:PostalCode>
+        <cat_ru:CountryCode>FR</cat_ru:CountryCode>
+        <cat_ru:CounryName>Ֆրանսիա</cat_ru:CounryName>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUConsignor>
+    <ESADout_CU:ESADout_CUConsignee>
+      <cat_ru:OrganizationName>«Երամար» ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>00095129</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:City>Եղվարդ</cat_ru:City>
+        <cat_ru:StreetHouse>Երևանյան խճ.131</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUConsignee>
+    <ESADout_CU:ESADout_CUFinancialAdjustingResponsiblePerson>
+      <cat_ru:OrganizationName>«Երամար» ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>00095129</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:City>Եղվարդ</cat_ru:City>
+        <cat_ru:StreetHouse>Երևանյան խճ.131</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUFinancialAdjustingResponsiblePerson>
+    <ESADout_CU:ESADout_CUDeclarant>
+      <cat_ru:OrganizationName>«Երամար» ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>00095129</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:City>Եղվարդ</cat_ru:City>
+        <cat_ru:StreetHouse>Երևանյան խճ.131</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUDeclarant>
+    <ESADout_CU:ESADout_CUGoodsLocation>
+      <ESADout_CU:InformationTypeCode>11</ESADout_CU:InformationTypeCode>
+      <ESADout_CU:CustomsOffice>05100011</ESADout_CU:CustomsOffice>
+      <ESADout_CU:CustomsCountryCode>AM</ESADout_CU:CustomsCountryCode>
+      <ESADout_CU:GoodsLocationPlace>
+        <catESAD_cu:NumberCustomsZone>MP00013</catESAD_cu:NumberCustomsZone>
+      </ESADout_CU:GoodsLocationPlace>
+    </ESADout_CU:ESADout_CUGoodsLocation>
+    <ESADout_CU:ESADout_CUConsigment>
+      <catESAD_cu:ContainerIndicator>false</catESAD_cu:ContainerIndicator>
+      <catESAD_cu:DispatchCountryCode>FR</catESAD_cu:DispatchCountryCode>
+      <catESAD_cu:DispatchCountryName>Ֆրանսիա</catESAD_cu:DispatchCountryName>
+      <catESAD_cu:DestinationCountryCode>AM</catESAD_cu:DestinationCountryCode>
+      <catESAD_cu:DestinationCountryName>Հայաստան</catESAD_cu:DestinationCountryName>
+      <destinationCountryNameRus>Республика Армения</destinationCountryNameRus>
+      <destinationCountryNameEng>Armenia</destinationCountryNameEng>
+      <catESAD_cu:BorderCustomsOffice>
+        <cat_ru:Code>05100011</cat_ru:Code>
+        <cat_ru:OfficeName>Զվարթնոց Մ/Տ</cat_ru:OfficeName>
+        <cat_ru:CustomsCountryCode>AM</cat_ru:CustomsCountryCode>
+      </catESAD_cu:BorderCustomsOffice>
+      <ESADout_CU:ESADout_CUDepartureArrivalTransport>
+        <cat_ru:TransportModeCode>40</cat_ru:TransportModeCode>
+        <cat_ru:TransportNationalityCode>IR</cat_ru:TransportNationalityCode>
+        <ESADout_CU:TransportMeansQuantity>1</ESADout_CU:TransportMeansQuantity>
+        <ESADout_CU:TransportMeans>
+          <cat_ru:TransportIdentifier>W51150/1405</cat_ru:TransportIdentifier>
+          <cat_ru:TransportMeansNationalityCode>IR</cat_ru:TransportMeansNationalityCode>
+        </ESADout_CU:TransportMeans>
+      </ESADout_CU:ESADout_CUDepartureArrivalTransport>
+      <ESADout_CU:ESADout_CUBorderTransport>
+        <cat_ru:TransportModeCode>40</cat_ru:TransportModeCode>
+        <cat_ru:TransportNationalityCode>IR</cat_ru:TransportNationalityCode>
+        <ESADout_CU:TransportMeansQuantity>1</ESADout_CU:TransportMeansQuantity>
+        <ESADout_CU:TransportMeans>
+          <cat_ru:TransportIdentifier>W51150/1405</cat_ru:TransportIdentifier>
+          <cat_ru:TransportMeansNationalityCode>IR</cat_ru:TransportMeansNationalityCode>
+        </ESADout_CU:TransportMeans>
+      </ESADout_CU:ESADout_CUBorderTransport>
+    </ESADout_CU:ESADout_CUConsigment>
+    <ESADout_CU:ESADout_CUMainContractTerms>
+      <catESAD_cu:ContractCurrencyCode>EUR</catESAD_cu:ContractCurrencyCode>
+      <catESAD_cu:ContractCurrencyRate>536.84</catESAD_cu:ContractCurrencyRate>
+      <catESAD_cu:TotalInvoiceAmount>4251.71</catESAD_cu:TotalInvoiceAmount>
+      <catESAD_cu:TradeCountryCode>FR</catESAD_cu:TradeCountryCode>
+      <catESAD_cu:CUESADDeliveryTerms>
+        <cat_ru:DeliveryPlace>Yerevan</cat_ru:DeliveryPlace>
+        <cat_ru:DeliveryTermsStringCode>CPT</cat_ru:DeliveryTermsStringCode>
+      </catESAD_cu:CUESADDeliveryTerms>
+    </ESADout_CU:ESADout_CUMainContractTerms>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Կաշի կովի</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Кожа коровы</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>34</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>33</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1644.02</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>41079210000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>FR</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Ժամանակավոր ներմուծման (թույլտվության) մաքսային ընթացակարգի գործողության փաստացի տևողության հատկանիշ (թիվ «1», եթե ժամանակավոր ներմուծման ժամկետը մեկ տարուց պակաս է, կամ թիվ «2», եթե ժամանակավոր ներմուծման ժամկետը կազմում է մեկ տարի և ավել)</cat_ru:PrDocumentName>
+        <catESAD_cu:PresentedDocumentModeCode>10017</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:TemporaryImportCode>1</catESAD_cu:TemporaryImportCode>
+        <catESAD_cu:TemporaryStorageImportDate>2018-05-18</catESAD_cu:TemporaryStorageImportDate>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Փոխադրման ամփոփագիր</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>0</cat_ru:PrDocumentNumber>
+        <catESAD_cu:PresentedDocumentModeCode>460</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>0</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Հաշիվ ապրանքագիր</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>P17/15AA</cat_ru:PrDocumentNumber>
+        <cat_ru:PrDocumentDate>2017-05-09</cat_ru:PrDocumentDate>
+        <catESAD_cu:PresentedDocumentModeCode>455</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Նույնականացման տվյալների ամրագրման թերթիկ</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>0003617</cat_ru:PrDocumentNumber>
+        <cat_ru:PrDocumentDate>2017-05-18</cat_ru:PrDocumentDate>
+        <catESAD_cu:PresentedDocumentModeCode>033</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Այլ փաստաթուղթ</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>951</cat_ru:PrDocumentNumber>
+        <cat_ru:PrDocumentDate>2017-05-18</cat_ru:PrDocumentDate>
+        <catESAD_cu:PresentedDocumentModeCode>456</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Այլ փաստաթուղթ</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>011/46-Ն</cat_ru:PrDocumentNumber>
+        <cat_ru:PrDocumentDate>2017-04-07</cat_ru:PrDocumentDate>
+        <catESAD_cu:PresentedDocumentModeCode>456</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>25.89</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Քառակուսի մետր</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>055</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>CT</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+        <catESAD_cu:UnitPackInfo>
+          <catESAD_cu:PackingCode>NA</catESAD_cu:PackingCode>
+        </catESAD_cu:UnitPackInfo>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>51</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>186</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Փաթեթավորման պարկ պոլիէթիլենային -150 հատ</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Упаковочные мешки из полиэтилена-150 шт</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>7</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>150.19</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>39232100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>FR</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+        <ecoTax>OO</ecoTax>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[3]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[4]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[6]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>9310</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>1613</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>80628</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>2</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>УН</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>9310</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>0</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>0</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>0</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>УМ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>7</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Կիլոգրամ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>166</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>CT</catESAD_cu:PackingCode>
+        </catESAD_cu:PackingInformation>
+        <catESAD_cu:UnitPackInfo>
+          <catESAD_cu:PackingCode>NA</catESAD_cu:PackingCode>
+        </catESAD_cu:UnitPackInfo>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>51</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>186</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Պարան բամբակյա -150մ</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Хлопчатобумажной веревки -150м</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>10</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>136</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>58061000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>FR</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[3]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[4]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Հաշիվ ապրանքագիր</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>P17/1622</cat_ru:PrDocumentNumber>
+        <cat_ru:PrDocumentDate>2017-05-05</cat_ru:PrDocumentDate>
+        <catESAD_cu:PresentedDocumentModeCode>455</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[6]"/>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Կիլոգրամ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>166</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>CT</catESAD_cu:PackingCode>
+        </catESAD_cu:PackingInformation>
+        <catESAD_cu:UnitPackInfo>
+          <catESAD_cu:PackingCode>NA</catESAD_cu:PackingCode>
+        </catESAD_cu:UnitPackInfo>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>51</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>186</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Կայծակ շղթա մետաղական ատամնաշարով</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Молния цепь металлическими зубами</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>6</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>585.5</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>96071100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>FR</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[4]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[6]"/>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>50</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Մետր</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>006</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>CT</catESAD_cu:PackingCode>
+        </catESAD_cu:PackingInformation>
+        <catESAD_cu:UnitPackInfo>
+          <catESAD_cu:PackingCode>NA</catESAD_cu:PackingCode>
+        </catESAD_cu:UnitPackInfo>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>51</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>186</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մետաղական` օղակներ -400 հատ</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Металлические  кольцо -400 шт</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.5</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>872</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>83089000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>FR</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[4]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods[3]/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[6]"/>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Կիլոգրամ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>166</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>CT</catESAD_cu:PackingCode>
+        </catESAD_cu:PackingInformation>
+        <catESAD_cu:UnitPackInfo>
+          <catESAD_cu:PackingCode>NA</catESAD_cu:PackingCode>
+        </catESAD_cu:UnitPackInfo>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>51</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>186</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Շղթայի ` օղակ -432 հատ</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Кольца  цепи -432 шт</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.5</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>864</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>96061000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>FR</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Ֆրանսիա</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[3]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[4]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods[3]/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[5]"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[6]"/>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Կիլոգրամ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>166</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>CT</catESAD_cu:PackingCode>
+        </catESAD_cu:PackingInformation>
+        <catESAD_cu:UnitPackInfo>
+          <catESAD_cu:PackingCode>NA</catESAD_cu:PackingCode>
+        </catESAD_cu:UnitPackInfo>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>51</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>186</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+  </ESADout_CU:ESADout_CUGoodsShipment>
+  <ESADout_CU:FilledPerson>
+    <cat_ru:PersonSurname>Simonyan</cat_ru:PersonSurname>
+    <cat_ru:PersonName>Siranush</cat_ru:PersonName>
+    <unn>00095129</unn>
+    <catESAD_cu:Contact>
+      <cat_ru:Phone>+37499022277</cat_ru:Phone>
+      <cat_ru:E_mail>eramar@yahoo.fr</cat_ru:E_mail>
+    </catESAD_cu:Contact>
+  </ESADout_CU:FilledPerson>
+  <declarantUnn>00095129</declarantUnn>
+</ESADout_CU:ESADout_CU>

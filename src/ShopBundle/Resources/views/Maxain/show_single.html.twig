@@ -1,0 +1,226 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link type="text/css" rel="stylesheet" href="{{ asset('bundles/sonatacore/vendor/select2/select2.css') }}">
+    <style type="text/css" rel="stylesheet">
+        .select2-container{
+            border: none;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {% for flash_message in app.session.flashBag.get('notice') %}
+                    <div class="flash-notice">
+                        <p>{{ flash_message }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if is_granted('ROLE_SUPER_ADMIN') %}
+                <div class="col-md-6">
+                    <div class="flash-notice"></div>
+                    <button class="btn btn-sm btn-success" id="utf-8-covert">Convert UTF-8</button>
+                </div>
+            {% endif %}
+        </div>
+        <div class="wrapper">
+            {{ grid(grid, 'APYDataGridBundle::blocks.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('jquery_components/select2/select2.js') }}"></script>
+    <script>
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+        } );
+
+        var object = [], groupedObjects = [];
+
+        $(document).ready(function() {
+
+            if(object.length >0) {
+                $('.group-name').addClass('select2-default');
+                $(".select2-default").select2({
+
+                    placeholder: 'Select Group',
+                    allowClear: true,
+                    multiple: false,
+                    data: function () {
+                        return {results: object};
+                    },
+                    formatNoMatches: function (query) {
+                        console.log(query);
+                        return '<span>' + query + '</span><button class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"></span></button>';
+                    }
+                });
+            }
+
+        });
+
+
+        $('input[name="grouped"]').on('click', function () {
+            var isChecked= $(this).is(":checked");
+            if(isChecked == true){
+
+                $(this).scrollTop( 50000 );
+            }
+
+            var inter = 0;
+            $('input[name="grouped"]').each(function () {
+                if($(this).is(":checked")){
+                    inter ++;
+                }
+            })
+            $('.grouped-count').text('Selected items count: '+inter);
+        })
+
+        $('.add-group').on('click', function () {
+            var groupName = $('input[name="group"]').val();
+
+            if(groupName.length < 1){
+                object.push({id:object.length+1, text:groupName});
+                $('input[name="group"]').select();
+                $('input[name="group"]').closest('div').addClass('has-error');
+                $('.control-label').text('Please add new group name');
+            }else {
+                addNewGroup(groupName);
+            }
+        });
+
+        $('input[name="group"]').on('keypress', function () {
+            $('input[name="group"]').closest('div').removeClass('has-error');
+            $('.control-label').text('');
+        });
+
+        function addNewGroup(groupName) {
+            var ides = [], items=[], obj = {},
+                price = 0, count = 0, netto =0, brutto=0, packages=0, unit = '', curency = '', contry = '', description = '' ;
+            $('input[name="grouped"]').each(function () {
+                if($(this).is(":checked")){
+                    var id = this.id, row;
+                    id = parseInt(id.replace(/group-/g, ''));
+                    ides.push(id);
+
+                    row = $(this).closest('tr');
+
+                        count+=parseFloat(row.children('td.grid-column-count').children('input').val());
+                        unit = row.children('.grid-column-unit').text();
+                        price+= parseFloat(row.children('td.grid-column-price').children('input').val());
+                        curency = row.children('td.grid-column-curency').text();
+                        contry = row.children('td.grid-column-country').text();
+                        netto += parseFloat(row.children('td.grid-column-netto').children('input').val());
+                        brutto += parseFloat(row.children('td.grid-column-brutto').children('input').val());
+                        packages += parseFloat(row.children('td.grid-column-package').children('input').val());
+                        description = row.children('td.grid-column-description').text();
+
+                    items.push({id:id,
+                        name:row.children('.grid-column-name').text().replace(/ /g, ''),
+                        count:row.children('td.grid-column-count').children('input').val(),
+                        unit:row.children('.grid-column-unit').text().replace(/ /g, ''),
+                        price:row.children('td.grid-column-price').children('input').val(),
+                        curency:row.children('td.grid-column-curency').text(),
+                        country:row.children('td.grid-column-country').text(),
+                        netto:row.children('td.grid-column-netto').children('input').val(),
+                        brutto:row.children('td.grid-column-brutto').children('input').val(),
+                        packages:row.children('td.grid-column-package').children('input').val(),
+                        description:row.children('td.grid-column-description').text(),
+                                    });
+                    row.css({display:'none'});
+                }
+
+            });
+            obj = {
+                name:groupName, price:price, count:count,
+                netto:netto, brutto:brutto, packages:packages,
+                unit:unit, curency:curency, contry:contry,
+                description:description, items:items
+            };
+            groupedObjects.push(obj);
+
+            addGroup({name:groupName, ides:ides});
+        }
+
+        function addGroupRow(obj, state) {
+            var displ = '';
+            if(state === true){
+                displ = 'inline-grid';
+            }else {
+                displ = 'none';
+            }
+
+            var cont = '<tr class="bg-s grid-row-cells even ui-sortable-handle" style="background: #dff0d8; display: '+displ+'">' +
+                '<td class="grid-column-grouped">' +
+                '<div class="checkbox">' +
+                '<label><input name="grouped" class="checkbox" type="checkbox" value="" id="group-17" checked> Check for grouped</label>' +
+                '</div>' +
+                '</td><' +
+                'td class="grid-column-name">'+obj.name+'</td>' +
+                '<td class="grid-column-count align-right">' +
+                '<input name="count" class="form-control" id="" value="'+obj.count+'" type="text">' +
+                '</td>' +
+                '<td class="grid-column-unit">'+obj.unit+'</td>' +
+                '<td class="grid-column-price align-right">' +
+                '<input name="price" class="form-control" id="" value="'+obj.price+'" type="text"></td>' +
+                '<td class="grid-column-curency">'+obj.curency+'</td>' +
+                '<td class="grid-column-netto align-right">' +
+                '<input name="netto" class="form-control" id="" value="'+obj.netto+'" type="text">' +
+                '</td>' +
+                '<td class="grid-column-brutto align-right">' +
+                '<input name="brutto" class="form-control" id="" value="'+obj.brutto+'" type="text">' +
+                '</td>' +
+                '<td class="grid-column-country">'+obj.contry+'</td>' +
+                '<td class="grid-column-package align-right">' +
+                '<input name="package" class="form-control" id="" value="'+obj.packages+'" type="text">' +
+                '</td>' +
+                '<td class="grid-column-description">'+obj.description+'</td>' +
+                '<td class="grid-column-action_column last-column">' +
+                '<ul class="grid-row-actions">' +
+                    +'<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Deconstruct group"><span class="glyphicon glyphicon-remove"></span></button>'+
+                '</ul>' +
+                '</td>' +
+                '</tr>';
+
+            $('#sortable').after(cont);
+        }
+
+
+        /**
+         * This function se to get data for group
+         */
+        function addGroup(data) {
+
+            jQuery.ajax({
+                url: "/api/taxes/adds/goups",
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                async: true,
+                dataType: "json",
+                data: JSON.stringify(data),
+                success: function (resultData) {
+                    console.log(resultData);
+                    addGroupRow(resultData.newGroup, true);
+                    $.each(resultData.parents, function (kay, value) {
+                        console.log(value);
+                        addGroupRow(value, false);
+                    });
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    if (errorThrown === 'Not Found') {
+                        $('table.order>tbody').html('');
+                        $('.total-count').html('<span>Items Count </span> 0');
+                        $('.total-price').html('<span>Total price </span>$ 0');
+                        $('.selected_infos').html('Bag&nbsp;<span class="badge">0</span>')
+                    }
+                    console.log(jqXHR, textStatus, errorThrown);
+                }
+            });
+        }
+
+    </script>
+{% endblock %}

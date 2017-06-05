@@ -34,6 +34,9 @@ class AppKernel extends Kernel
 
             new AppBundle\AppBundle(),
             new ShopBundle\ShopBundle(),
+
+            new Liuggio\ExcelBundle\LiuggioExcelBundle(),
+            new APY\DataGridBundle\APYDataGridBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

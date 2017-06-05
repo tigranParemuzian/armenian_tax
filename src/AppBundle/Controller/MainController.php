@@ -7,6 +7,8 @@ use AppBundle\Entity\Booking;
 use AppBundle\Entity\Footer;
 use AppBundle\Entity\Header;
 use AppBundle\Entity\Item;
+use AppBundle\Entity\Reference;
+use AppBundle\Entity\ReferenceItem;
 use AppBundle\Entity\Tarification;
 use AppBundle\Form\UploadXmlType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
@@ -36,7 +38,7 @@ class MainController extends Controller
     }
 
     /**
-     * @Route("/upload", name="upload")
+     * @Route("/create-reference", name="create-reference")
      * @param Request $request
      * @return Response
      * @Security("has_role('ROLE_USER')")
@@ -57,6 +59,13 @@ class MainController extends Controller
             //check form validation
             if ($form->isValid()) {
 
+                $fs = new Filesystem();
+
+                $brochuresDir = $this->container->getParameter('kernel.root_dir') . '/../web/uploads/files';
+
+                $userDir = $brochuresDir. '/'.str_replace('.', '', str_replace('/', '_', $this->getUser()->getUsername()));
+                $fs->mkdir($userDir);
+
                 // form get date
                 $data = $form->getData();
                 $file = $data['file'];
@@ -65,161 +74,95 @@ class MainController extends Controller
                 $fileName = $name.(str_replace( ' ', '_', str_replace('(', '_', str_replace(')', '_', $file->getClientOriginalName()))));
                 // save file in /web/uploads/files folder
                 $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files';
-                $mainDir = str_replace('/app', '/', $this->container->getParameter('kernel.root_dir'));
                 //get corrent user
-                $username = $this->getUser()->getUsername();
+                $now = new \DateTime('now');
                 // check isset file, file type is xls
                 if (is_file($file) && in_array($file->getMimeType(), $xlsTypes))
                 {
                     // move file to uploda directory
-                    $file->move($brochuresDir, $fileName);
+                    $file->move($userDir, $fileName);
 
-                    $file = $brochuresDir.'/'.$fileName;
+                    $file = $userDir.'/'.$fileName;
+
+                    $fs->chown($userDir.'/'.$fileName, 'www-data', true);
 
                     if(true)
                     {
                         $fileContents = file_get_contents($file);
+
+                        $fileContents = str_replace('ESADout_CU:', '', $fileContents);
+                        $fileContents = str_replace('catESAD_cu:', '', $fileContents);
+                        $fileContents = str_replace('cat_ru:', '', $fileContents);
+
                         $xml = new \SimpleXMLElement($fileContents);
 
-                        $booking = new Booking();
-                        $booking->setStatus(1);
-                        $booking->setUser($this->getUser());
-                        $booking->setCreated(new \DateTime('now'));
-                        $booking->setUpdated(new \DateTime('now'));
-                        $em->persist($booking);
+                        $reference = new Reference();
+                        $reference->setUser($this->getUser());
+                        $reference->setCode($now->getTimestamp().$this->getUser()->getId());
+                        $em->persist($reference);
 
-                        $header = new Header();
-                        $header->setBooking($booking);
-                        $header->setIdentTaxCode($this->checkInfo($xml->Identification->Office_segment->Customs_clearance_office_code));
-                        $header->setIdentTypeCode($this->checkInfo($xml->Identification->Type->Declaration_gen_procedure_code));
-                        $header->setIdentTypeDeclar($this->checkInfo($xml->Identification->Type->Type_of_declaration));
-                        $header->setSerialCDate(new \DateTime($this->checkInfo($xml->Identification->Registration->Date)));
-                        $header->setTransportBorderOfficeCode($this->checkInfo($xml->Transport->Border_office->Code));
-                        $header->setTransportDeliveryTermCode($this->checkInfo($xml->Transport->Delivery_terms->Code));
-                        $header->setTransportDeliveryTermPlace($this->checkInfo($xml->Transport->Delivery_terms->Place));
-                        $header->setTransportInlandTransportMode($this->checkInfo($xml->Transport->Means_of_transport->Border_information->Inland_mode_of_transport));
-                        $header->setTransportTransportIdentity($this->checkInfo($xml->Transport->Means_of_transport->Border_information->Identity));
-                        $header->setTransportTransportNation($this->checkInfo($xml->Transport->Means_of_transport->Border_information->Nationality));
-                        $header->setTransportTransportMode($this->checkInfo($xml->Transport->Means_of_transport->Border_information->Mode));
-                        $header->setValuationGsInvoiceCurrencyCode($this->checkInfo($xml->Valuation->Gs_Invoice->Currency_code));
-                        $header->setValuationGsInvoiceCurrencyRate($this->checkInfo($xml->Valuation->Gs_Invoice->Currency_rate));
-                        $header->setValuationGsInvoiceTotalInvoice($this->checkInfo($xml->Valuation->Total->Total_invoice));
-                        $header->setValuationGsInvoiceTotalWeight($this->checkInfo($xml->Valuation->Total->Total_weight));
-                        $header->setGiTaxCountry($this->checkInfo($xml->General_information->Country->Trading_country));
-                        $header->setGiTypeDestinationCode($this->checkInfo($xml->General_information->Country->Destination->Destination_country_code));
-                        $header->setGiTypeExport($this->checkInfo($xml->General_information->Country->Export->Export_country_code));
-                        $header->setGiTypeExportCname($this->checkInfo($xml->General_information->Country->Export->Export_country_name));
-                        $header->setTraderstaxExport($this->checkInfo($xml->Traders->Exporter->Exporter_name));
-                        $header->setTraderstypeCosigCode($this->checkInfo($xml->Traders->Consignee->Consignee_code));
-                        $em->persist($header);
+                        foreach ($xml as $t){
 
-                        $j=1;
-                        foreach($xml->Item as $itemInfo){
-                            if(isset($itemInfo->Goods_description->Description_of_goods) && strlen($itemInfo->Goods_description->Description_of_goods)>0){
-                                $item = new Item();
-
-                                $item->setBooking($booking);
-                                if(is_object($itemInfo->Packages) && count($itemInfo->Packages)>0){
-                                    $item->setNumberOfPackages($this->checkInfo($itemInfo->Packages->Number_of_packages));
-                                    $item->setKindOfPackagesCode($this->checkInfo($itemInfo->Packages->Kind_of_packages_code));
-                                    $item->setKindOfPackagesName($this->checkInfo($itemInfo->Packages->Kind_of_packages_name));
-                                }
-
-                                $item->setCountryOfOriginCode($this->checkInfo($itemInfo->Goods_description->Country_of_origin_code));
-                                $item->setSpecificationCodeDescription($this->checkInfo($itemInfo->Goods_description->Specification_Code_Description));
-                                $item->setDescriptionOfGoods($this->checkInfo($itemInfo->Goods_description->Description_of_goods));
-                                $item->setGrossWeightItm($this->checkInfo($itemInfo->Valuation_item->Weight_itm->Gross_weight_itm));
-                                $item->setNetWeightItm($this->checkInfo($itemInfo->Valuation_item->Weight_itm->Net_weight_itm));
-                                $item->setRateOfAdjustement($this->checkInfo($itemInfo->Valuation_item->Rate_of_adjustement));
-                                $item->setStatisticalValue($this->checkInfo($itemInfo->Valuation_item->Statistical_value));
-                                $item->setAmountNationalCurrency($this->checkInfo($itemInfo->Valuation_item->item_external_freight->Amount_national_currency));
-                                $item->setSummaryDeclaration($this->checkInfo($itemInfo->Previous_doc->Summary_declaration));
-                                $item->setTotalCifItm($this->checkInfo($itemInfo->Valuation_item->Total_CIF_itm));
-                                $item->setTotalCostItm($this->checkInfo($itemInfo->Valuation_item->Total_cost_itm));
-                                $item->setItemNumber($j);
-
-
-                                $em->persist($item);
-
-
-                                if(count($itemInfo->Attached_documents)>0){
-                                    $attachedDocument = new AttachedDocument();
-                                    $attachedDocument->setCode($this->checkInfo($xml->Item->Attached_documents->Attached_document_code));
-                                    $attachedDocument->setDate(new \DateTime($this->checkInfo($xml->Item->Attached_documents->Attached_document_date)));
-                                    $attachedDocument->setItem($item);
-                                    $attachedDocument->setName($this->checkInfo($xml->Item->Attached_documents->Attached_document_name));
-                                    $attachedDocument->setReference($this->checkInfo($xml->Item->Attached_documents->Attached_document_reference));
-                                    $attachedDocument->setScan($this->checkInfo($xml->Item->Attached_documents->Attached_document_scan));
-
-                                    $em->persist($attachedDocument);
-                                }
-
-                                if(count($itemInfo->Tarification)>0 && count($itemInfo->Tarification->HScode)>0){
-                                    $tarification = new Tarification();
-                                    $tarification->setItem($item);
-                                    $tarification->setHScodeCommodityCode($this->checkInfo($itemInfo->Tarification->HScode->Commodity_code));
-                                    $tarification->setHScodePrecision1($this->checkInfo($itemInfo->Tarification->HScode->Precision_1));
-                                    $tarification->setHScodePrecision2($this->checkInfo($itemInfo->Tarification->HScode->Precision_2));
-                                    $tarification->setHScodePrecision3($this->checkInfo($itemInfo->Tarification->HScode->Precision_3));
-                                    $tarification->setHScodePrecision4($this->checkInfo($itemInfo->Tarification->HScode->Precision_4));
-                                    $tarification->setSupplementaryUnitCode($this->checkInfo($itemInfo->Tarification->Supplementary_unit[0]->Supplementary_unit_code));
-                                    $tarification->setSupplementaryUnitName($this->checkInfo($itemInfo->Tarification->Supplementary_unit[0]->Supplementary_unit_name));
-                                    $tarification->setSupplementaryUnitQuantity($this->checkInfo($itemInfo->Tarification->Supplementary_unit[0]->Supplementary_unit_quantity));
-                                    $tarification->setAttachedDocItem($this->checkInfo($itemInfo->Tarification->Attached_doc_item));
-                                    $tarification->setExtendedCustomsProcedure($this->checkInfo($itemInfo->Tarification->Extended_customs_procedure));
-                                    $tarification->setNationalCustomsProcedure($this->checkInfo($itemInfo->Tarification->National_customs_procedure));
-                                    $tarification->setPreferenceCode($this->checkInfo($itemInfo->Tarification->Preference_code));
-                                    $tarification->setQuotaCode($this->checkInfo($itemInfo->Tarification->Quota_code));
-                                    $tarification->setValueItem($this->checkInfo($itemInfo->Tarification->Value_item));
-                                    $tarification->setValuationMethodCode($this->checkInfo($itemInfo->Tarification->Valuation_method_code));
-                                    $tarification->setItemPrice($this->checkInfo($itemInfo->Tarification->Item_price));
-                                    $tarification->setItemPrice($this->checkInfo($itemInfo->Tarification->Item_price));
-                                    $em->persist($tarification);
-                                }
-
+                            if(isset($t->ESADout_CUMainContractTerms) && count($t->ESADout_CUMainContractTerms) >0){
+                                $currencyCode = $t->ESADout_CUMainContractTerms->ContractCurrencyCode;
+                                $currencyRate = $t->ESADout_CUMainContractTerms->ContractCurrencyRate;
                             }
 
-                            $j++;
-                        }
-                        $footer = new Footer();
-                        foreach($xml->Customs_Fee as $items){
-                            $i = 0;
-                            foreach($items[0] as $item){
-                                switch($i){
-                                    case 0:
-                                        $footer->setFeeAmount1($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    case 1:
-                                        $footer->setFeeAmount2($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    case 2:
-                                        $footer->setFeeAmount3($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    case 3:
-                                        $footer->setFeeAmount4($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    case 4:
-                                        $footer->setFeeAmount5($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    case 5:
-                                        $footer->setFeeAmount6($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    case 6:
-                                        $footer->setFeeAmount7($this->checkInfo($item->Fee_Amount));
-                                        break;
-                                    default:
-                                        break;
+                            if(isset($t->ESADout_CUConsignor) && count($t->ESADout_CUConsignor) >0){
+                                $companyFrom = $t->ESADout_CUConsignor->OrganizationName;
+                            }
+
+                            if(isset($t->ESADout_CUConsignee) && count($t->ESADout_CUConsignee) >0){
+                                $companyName = $t->ESADout_CUConsignee->OrganizationName;
+                            }
+
+                            if(isset($t->ESADout_CUGoods) && count($t->ESADout_CUGoods)>0){
+
+                                foreach ($t->ESADout_CUGoods as $i){
+
+                                    $referenceItem = new ReferenceItem();
+                                    $referenceItem->setCode((string)$this->checkInfo($i->GoodsTNVEDCode));
+                                    $referenceItem->setName((string)$this->checkInfo($i->GoodsDescription));
+                                    $referenceItem->setNameRu((string)$this->checkInfo($i->goodsDscRu));
+                                    $referenceItem->setBrutto((float)$this->checkInfo($i->GrossWeightQuantity));
+                                    $referenceItem->setNetto((float)$this->checkInfo($i->NetWeightQuantity));
+                                    $referenceItem->setPrice((float)$this->checkInfo($i->InvoicedCost));
+                                    $referenceItem->setTaxPrice((float)$this->checkInfo($i->ESADout_CUCustomsPaymentCalculation->TaxBase));
+                                    $referenceItem->setParentCode((string)$this->checkInfo($i->GoodsAddTNVEDCode));
+                                    $referenceItem->setCountryCode((string)$this->checkInfo($i->OriginCountryCode));
+                                    $referenceItem->setCountryName((string)$this->checkInfo($i->OriginCountryName));
+                                    $referenceItem->setCount((float)$this->checkInfo($i->SupplementaryGoodsQuantity->GoodsQuantity));
+                                    $referenceItem->setPakageQuantity((float)$this->checkInfo($i->ESADGoodsPackaging->PakageQuantity));
+                                    $referenceItem->setUnitName((string)$this->checkInfo($i->SupplementaryGoodsQuantity->MeasureUnitQualifierName));
+                                    $referenceItem->setUnitCode((float)$this->checkInfo($i->SupplementaryGoodsQuantity->MeasureUnitQualifierCode));
+                                    $referenceItem->setCurrencyName((string)$currencyCode);
+                                    $referenceItem->setCurrencyRate((float)$this->checkInfo($currencyRate));
+                                    $referenceItem->setCompanyName((string)$this->checkInfo($companyName));
+                                    $referenceItem->setCompanyFrom((string)$this->checkInfo($companyFrom));
+                                    $referenceItem->setCalcByWeight($referenceItem->getTaxPrice() / $referenceItem->getCurrencyRate() / $referenceItem->getNetto());
+                                    $referenceItem->setCalcByCount($referenceItem->getTaxPrice() / $referenceItem->getCurrencyRate() / $referenceItem->getCount());
+                                    $referenceItem->setReference($reference);
+
+                                    $validator = $this->get('validator');
+
+                                    $errors = $validator->validate($referenceItem);
+
+                                    if(count($errors) > 0 ) {
+
+                                    }
+
+                                    try{
+                                        $em->persist($referenceItem);
+                                    }catch (\Exception $e){
+
+                                    }
+
                                 }
-                                $i++;
                             }
                         }
-                            $footer->setBooking($booking);
-
-                            $em->persist($footer);
-//                        }
-
 
                         $em->flush();
+
                         $message['success'] = 'success';
 
                         if(isset($message['errorMessage']))
@@ -237,6 +180,8 @@ class MainController extends Controller
                                 $message['success']
                             );
                         }
+
+                        return $this->redirectToRoute('reference-list');
                     }
                 }
                 elseif (is_file($brochuresDir.'/'.$fileName)) {
@@ -278,25 +223,114 @@ class MainController extends Controller
         return array('bookings'=>$bookings);
     }
 
+
+
     /**
-     * @Route("/mah/{bid}", name="mah")
+     * @Route("/reference/list", name="reference-list")
      * @param Request $request
      * @return Response
      * @Security("has_role('ROLE_USER')")
      */
-    public function generateMahAction(Request $request, $bid){
+    public function referenceAction(Request $request){
 
         $em = $this->getDoctrine()->getManager();
 
-        $bookings = $em->getRepository('AppBundle:Booking')->findForMah((int)$bid);
-        $this->generateMah($bookings);
-/*//        dump($bookings);
-        foreach($bookings->getItems() as $item){
-//            dump($item); exit;
-        }*/
+        $reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
 
-        return $this->redirect($this->generateUrl('list'));
+
+        if (!$reference){
+            $this->addFlash(
+                'error',
+                'Reference not found.'
+            );
+
+            return $this->redirectToRoute('create-reference');
+        }
+
+        return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));
     }
+
+
+    /**
+     *
+     * @Route("/reference/generate-excel/{referenceId}/{state}", name="reference-generate-excel")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     *
+     * @param Request $request
+     * @param $referenceId
+     */
+    public function generateExcel(Request $request, $referenceId, $state){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $data = $em->getRepository('AppBundle:ReferenceItem')->findByReference((int)$referenceId);
+
+        if(!$data){
+            $this->addFlash(
+                'error',
+                'Reference Items not found.'
+            );
+
+            return $this->redirectToRoute('reference-list');
+        }
+
+        $file = $this->get('app.convert.excel')->createReference($data, $state);
+
+        $response = new Response();
+        $response->headers->set('Cache-Control', 'private');
+        $response->headers->set('Content-type', mime_content_type($file));
+        $response->headers->set('Content-Disposition', 'attachment; filename="' . basename($file) . '";');
+        $response->headers->set('Content-length', filesize($file));
+
+        $response->sendHeaders();
+
+        $response->setContent(file_get_contents($file));
+
+        return $response;
+
+
+    }
+
+
+    /**
+     * @Route("/reference/list", name="reference-list")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     */
+//    public function generateMahAction(Request $request){
+//
+//        $em = $this->getDoctrine()->getManager();
+//
+//        $reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
+//
+//
+//        if (!$reference){
+//            $this->addFlash(
+//                'error',
+//                'Reference not found.'
+//            );
+//
+//            return $this->redirectToRoute('create-reference');
+//        }
+//
+//        return $this->render('', ['data'=>$reference]);
+//        dump($reference); exit;
+//
+//
+//
+//
+//
+////        $this->generateMah($bookings, $state);
+///*//        dump($bookings);
+//        foreach($bookings->getItems() as $item){
+////            dump($item); exit;
+//        }*/
+//
+//        return $this->redirect($this->generateUrl('list'));
+//    }
     /**
      * This function check import file type
      * @return array
@@ -320,7 +354,7 @@ class MainController extends Controller
         }
     }
 
-    private function generateMah($booking){
+    private function generateMah($booking, $state){
 
         if($booking instanceof Booking){
 
@@ -383,22 +417,28 @@ class MainController extends Controller
                     <item>
                       <grossWeightQuantity>' . $item->getGrossWeightItm() . '</grossWeightQuantity>
                       <goodsTNVEDCode>'. $item->getTarification()->getHScodeCommodityCode(). $item->getTarification()->getHScodePrecision1() .'</goodsTNVEDCode>
-                      <goodsAddTNVEDCode/>
+                      <goodsAddTNVEDCode>'.$item->getTarification()->getHScodePrecision4() .'</goodsAddTNVEDCode>                    
                       <methodNumberCode>METHOD_1</methodNumberCode>
                       <baseNumberCode/>
                       <methodChoice/>
-                      <nationalDeclaredCustomsCost>70413</nationalDeclaredCustomsCost>
+                      <nationalDeclaredCustomsCost>'.$item->getTotalCifItm().'</nationalDeclaredCustomsCost>
                       <dollarDeclaredCustomsCost>145.88</dollarDeclaredCustomsCost>
-                      <additionalDataList/>
-                      <currencyPaymentList>
+                      ';
+
+                    if((int)$state == 1){
+                        $mahItem .='<additionalDataList/>
+                        <currencyPaymentList>
                         <currencyPayment>
                           <positionNumber>' . $item->getItemNumber() . '</positionNumber>
                           <currencyAmount>' . $item->getTarification()->getItemPrice() . '</currencyAmount>
                           <currencyCode>' . $booking->getHeader()->getValuationGsInvoiceCurrencyCode() .'</currencyCode>
                           <currencyRate>' . $booking->getHeader()->getValuationGsInvoiceCurrencyRate() .'</currencyRate>
                         </currencyPayment>
-                      </currencyPaymentList>
-                      <dtsMethod1>
+                      </currencyPaymentList>';
+                    }
+
+
+                $mahItem .='<dtsMethod1>
                         <dealCurrencyAmount>' . $item->getTarification()->getItemPrice() . '</dealCurrencyAmount>
                         <dealCurrencyCode>' . $booking->getHeader()->getValuationGsInvoiceCurrencyCode() .'</dealCurrencyCode>
                         <dealCurrencyRate>' . $booking->getHeader()->getValuationGsInvoiceCurrencyRate() .'</dealCurrencyRate>
@@ -419,7 +459,7 @@ class MainController extends Controller
                         <loadCharges1/>
                         <additionalSumBorderPlace/>
                         <insuranceCharges1/>
-                        <totalAdditionalSum>4962</totalAdditionalSum>
+                        <totalAdditionalSum>'.$item->getAmountNationalCurrency().'</totalAdditionalSum>
                         <buildingAmount/>
                         <unionTransportCharge1/>
                         <unionTaxPayment1/>

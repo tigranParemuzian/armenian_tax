@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
@@ -18,9 +19,95 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @var
+     * @ORM\Column(name="last_name", type="string", length=100, nullable=true)
+     * @Assert\NotNull(message="User Last Name can`t be null")
+     */
+    private $lastName;
+
+    /**
+     * @var
+     * @ORM\Column(name="first_name", type="string", length=100, nullable=true)
+     * @Assert\NotNull(message="User First Name can`t be null")
+     */
+    private $firstName;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="ShopBundle\Entity\Invoice", mappedBy="author", cascade={"all"}, orphanRemoval=true)
+     */
+    private $invoice;
+
     public function __construct()
     {
         parent::__construct();
         // your own logic
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param mixed $lastName
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param mixed $firstName
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+    /**
+     * Add invoice
+     *
+     * @param \ShopBundle\Entity\Invoice $invoice
+     *
+     * @return User
+     */
+    public function addInvoice(\ShopBundle\Entity\Invoice $invoice)
+    {
+        $this->invoice[] = $invoice;
+
+        return $this;
+    }
+
+    /**
+     * Remove invoice
+     *
+     * @param \ShopBundle\Entity\Invoice $invoice
+     */
+    public function removeInvoice(\ShopBundle\Entity\Invoice $invoice)
+    {
+        $this->invoice->removeElement($invoice);
+    }
+
+    /**
+     * Get invoice
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getInvoice()
+    {
+        return $this->invoice;
     }
 }

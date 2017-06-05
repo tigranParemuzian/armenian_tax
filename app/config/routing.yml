@@ -7,6 +7,12 @@ app:
     resource: "@AppBundle/Controller/"
     type:     annotation
 
+bag_rest:
+    type:     rest
+    resource: ShopBundle\Controller\Rest\RestMainController
+    schemes:  [http, https]
+
+
 #app_rest:
 #    type:     rest
 #    resource: "@AppBundle/Controller/Rest/ItemController.php"

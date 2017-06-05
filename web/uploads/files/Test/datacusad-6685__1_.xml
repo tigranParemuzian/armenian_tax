@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?><ESADout_CU:ESADout_CU xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:catESAD_cu="urn:customs.ru:CUESADCommonAggregateTypesCust:5.10.0" xmlns:cat_ru="urn:customs.ru:CommonAggregateTypes:5.10.0" xmlns:ESADout_CU="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.10.0" DocumentModeID="1006107E" xsi:schemaLocation="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.10.0 ESADout_CU.xsd">
+  <ESADout_CU:CustomsProcedure>IM</ESADout_CU:CustomsProcedure>
+  <ESADout_CU:CustomsModeCode>40</ESADout_CU:CustomsModeCode>
+  <ESADout_CU:ESADout_CUGoodsShipment>
+    <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+    <catESAD_cu:SpecificationNumber>9</catESAD_cu:SpecificationNumber>
+    <catESAD_cu:SpecificationListNumber>12</catESAD_cu:SpecificationListNumber>
+    <catESAD_cu:TotalGoodsNumber>17</catESAD_cu:TotalGoodsNumber>
+    <catESAD_cu:TotalPackageNumber>1</catESAD_cu:TotalPackageNumber>
+    <catESAD_cu:TotalSheetNumber>7</catESAD_cu:TotalSheetNumber>
+    <catESAD_cu:TotalCustCost>1700230</catESAD_cu:TotalCustCost>
+    <catESAD_cu:CustCostCurrencyCode>AMD</catESAD_cu:CustCostCurrencyCode>
+    <ESADout_CU:ESADout_CUConsignor>
+      <cat_ru:OrganizationName>MEGABAJT SP. z.o.o.</cat_ru:OrganizationName>
+      <cat_ru:Address>
+        <cat_ru:PostalCode>01-793</cat_ru:PostalCode>
+        <cat_ru:CountryCode>PL</cat_ru:CountryCode>
+        <cat_ru:CounryName>Լեհաստան</cat_ru:CounryName>
+        <cat_ru:Region>Warszawa</cat_ru:Region>
+        <cat_ru:StreetHouse>Rydygiera 8</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUConsignor>
+    <ESADout_CU:ESADout_CUConsignee>
+      <cat_ru:OrganizationName>«Վանարմկոմպ» ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>06938022</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:City>ք.Վանաձոր</cat_ru:City>
+        <cat_ru:StreetHouse>Կնունյանց փող. թիվ 43</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUConsignee>
+    <ESADout_CU:ESADout_CUFinancialAdjustingResponsiblePerson>
+      <cat_ru:OrganizationName>«Վանարմկոմպ» ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>06938022</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:City>ք.Վանաձոր</cat_ru:City>
+        <cat_ru:StreetHouse>Կնունյանց փող. թիվ 43</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUFinancialAdjustingResponsiblePerson>
+    <ESADout_CU:ESADout_CUDeclarant>
+      <cat_ru:OrganizationName>«Վանարմկոմպ» ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>06938022</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:City>ք.Վանաձոր</cat_ru:City>
+        <cat_ru:StreetHouse>Կնունյանց փող. թիվ 43</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUDeclarant>
+    <ESADout_CU:ESADout_CUGoodsLocation>
+      <ESADout_CU:InformationTypeCode>11</ESADout_CU:InformationTypeCode>
+      <ESADout_CU:CustomsOffice>05100015</ESADout_CU:CustomsOffice>
+      <ESADout_CU:CustomsCountryCode>AM</ESADout_CU:CustomsCountryCode>
+      <ESADout_CU:GoodsLocationPlace>
+        <catESAD_cu:NumberCustomsZone>MHT00036</catESAD_cu:NumberCustomsZone>
+      </ESADout_CU:GoodsLocationPlace>
+    </ESADout_CU:ESADout_CUGoodsLocation>
+    <ESADout_CU:ESADout_CUConsigment>
+      <catESAD_cu:ContainerIndicator>false</catESAD_cu:ContainerIndicator>
+      <catESAD_cu:DispatchCountryCode>PL</catESAD_cu:DispatchCountryCode>
+      <catESAD_cu:DispatchCountryName>Լեհաստան</catESAD_cu:DispatchCountryName>
+      <catESAD_cu:DestinationCountryCode>AM</catESAD_cu:DestinationCountryCode>
+      <catESAD_cu:DestinationCountryName>Հայաստան</catESAD_cu:DestinationCountryName>
+      <destinationCountryNameRus>Республика Армения</destinationCountryNameRus>
+      <destinationCountryNameEng>Armenia</destinationCountryNameEng>
+      <catESAD_cu:BorderCustomsOffice>
+        <cat_ru:Code>05100033</cat_ru:Code>
+        <cat_ru:OfficeName>Բագրատաշեն Մ/Կ</cat_ru:OfficeName>
+        <cat_ru:CustomsCountryCode>AM</cat_ru:CustomsCountryCode>
+      </catESAD_cu:BorderCustomsOffice>
+      <ESADout_CU:ESADout_CUDepartureArrivalTransport>
+        <cat_ru:TransportModeCode>32</cat_ru:TransportModeCode>
+        <cat_ru:TransportNationalityCode>BY</cat_ru:TransportNationalityCode>
+        <ESADout_CU:TransportMeansQuantity>2</ESADout_CU:TransportMeansQuantity>
+        <ESADout_CU:TransportMeans>
+          <cat_ru:TransportIdentifier>AM5965-7</cat_ru:TransportIdentifier>
+          <cat_ru:TransportMeansNationalityCode>BY</cat_ru:TransportMeansNationalityCode>
+          <firstTrailerRegId>A9740 A-7</firstTrailerRegId>
+        </ESADout_CU:TransportMeans>
+      </ESADout_CU:ESADout_CUDepartureArrivalTransport>
+      <ESADout_CU:ESADout_CUBorderTransport>
+        <cat_ru:TransportModeCode>32</cat_ru:TransportModeCode>
+        <cat_ru:TransportNationalityCode>BY</cat_ru:TransportNationalityCode>
+        <ESADout_CU:TransportMeansQuantity>2</ESADout_CU:TransportMeansQuantity>
+        <ESADout_CU:TransportMeans>
+          <cat_ru:TransportIdentifier>AM5965-7</cat_ru:TransportIdentifier>
+          <cat_ru:TransportMeansNationalityCode>BY</cat_ru:TransportMeansNationalityCode>
+          <firstTrailerRegId>A9740 A-7</firstTrailerRegId>
+        </ESADout_CU:TransportMeans>
+      </ESADout_CU:ESADout_CUBorderTransport>
+    </ESADout_CU:ESADout_CUConsigment>
+    <ESADout_CU:ESADout_CUMainContractTerms>
+      <catESAD_cu:ContractCurrencyCode>USD</catESAD_cu:ContractCurrencyCode>
+      <catESAD_cu:ContractCurrencyRate>482.19</catESAD_cu:ContractCurrencyRate>
+      <catESAD_cu:TotalInvoiceAmount>3251.85</catESAD_cu:TotalInvoiceAmount>
+      <catESAD_cu:TradeCountryCode>PL</catESAD_cu:TradeCountryCode>
+      <catESAD_cu:DealNatureCode>8</catESAD_cu:DealNatureCode>
+      <catESAD_cu:CUESADDeliveryTerms>
+        <cat_ru:DeliveryPlace>HANDLOWY</cat_ru:DeliveryPlace>
+        <cat_ru:DeliveryTermsStringCode>FCA</cat_ru:DeliveryTermsStringCode>
+      </catESAD_cu:CUESADDeliveryTerms>
+    </ESADout_CU:ESADout_CUMainContractTerms>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ստեղնաշար մկնիկով A4TECH 7100N</catESAD_cu:GoodsDescription>
+      <goodsDscRu>клавиатура с мышкой A4TECH 7100N</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>8.3</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>5.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>138</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716060000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0570</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Միջազգային ճանապարհային փոխադրումների (ՄՃՓ) գրքույկ (TIR գրքույկ)</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>SX80406836</cat_ru:PrDocumentNumber>
+        <cat_ru:PrDocumentDate>2017-05-21</cat_ru:PrDocumentDate>
+        <catESAD_cu:PresentedDocumentModeCode>02024</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUPresentedDocument>
+        <cat_ru:PrDocumentName>Տարանցիկ փոխադրման հայտարարագիր</cat_ru:PrDocumentName>
+        <cat_ru:PrDocumentNumber>05100033/210517/0010443</cat_ru:PrDocumentNumber>
+        <catESAD_cu:PresentedDocumentModeCode>09013</catESAD_cu:PresentedDocumentModeCode>
+        <catESAD_cu:ProvidingIndicationMark>1</catESAD_cu:ProvidingIndicationMark>
+      </ESADout_CU:ESADout_CUPresentedDocument>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>14674</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>73368</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ստեղնաշար A4TECH KD800L</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Клавиатуре A4TECH KD800L</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>8.9</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>6.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>159</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716060000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0571</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>16797</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>83987</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ստեղնաշար մկնիկով A4TECH KM72620D</catESAD_cu:GoodsDescription>
+      <goodsDscRu>клавиатура с мышкой A4TECH KM72620D</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>15.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>13</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>160</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716060000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0572</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>17997</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>89986</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>20</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ստեղնաշար մկնիկով A4TECH Q1500</catESAD_cu:GoodsDescription>
+      <goodsDscRu>клавиатура с мышкой  A4TECH Q1500</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>12</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>9.6</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>240</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716060000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0573</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>25118</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>125591</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ստեղնաշար մկնիկով A4TECH Q2100</catESAD_cu:GoodsDescription>
+      <goodsDscRu>клавиатуры и мыши A4TECH Q2100</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>12.15</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>10.56</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>220</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716060000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0574</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>23214</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>116072</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH OPTOECCO 612D</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Мышь A4TECH OPTOECCO 612D</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>27</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>24</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>560</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0852</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>58445</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>292223</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>200</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH T50</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мыши A4TECH T50</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.75</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>79</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0853</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>7906</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>39529</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH T70</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мыши A4TECH T70</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.75</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>75.75</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0854</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>7592</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>37962</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH TL70</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мыши A4TECH TL70</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.75</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>97.5</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0855</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>9690</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>48448</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH TL80</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мыши A4TECH TL80</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.75</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>100</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0856</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>9931</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>49653</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH ZL50</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мыши A4TECH ZL50</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.75</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>96</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0857</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>9710</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>48548</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH TL90</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мыши A4TECH TL90</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.6</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>102.5</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0858</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>10345</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>51723</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ականջակալ</catESAD_cu:GoodsDescription>
+      <goodsDscRu>гарнитура</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>18.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>14.7</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>688.1</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85183095000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>2010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>17501</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>350029</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>5</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>73506</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>367530</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>30</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Ստեղնաշար A4TECH B120</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Клавиатура A4TECH B120</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>49.25</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>25</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>364</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716060000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0392</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>40369</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>201845</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>20</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteQuantity>1</catESAD_cu:PalleteQuantity>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH V8M</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мышь A4TECH V8M</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.85</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.71</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>58.5</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0408</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>5946</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>29728</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>Մկնիկ A4TECH V7M</catESAD_cu:GoodsDescription>
+      <goodsDscRu>мышь A4TECH V7M</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>1.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.71</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>53.5</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:GoodsAddTNVEDCode>0406</catESAD_cu:GoodsAddTNVEDCode>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>5455</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>27276</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsDescription>բարձրախոս</catESAD_cu:GoodsDescription>
+      <goodsDscRu>Микрофон</goodsDscRu>
+      <catESAD_cu:GrossWeightQuantity>6.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>4.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>60</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85181095000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>Չինաստան</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument"/>
+      <ESADout_CU:ESADout_CUPresentedDocument reference="/ESADout_CU:ESADout_CU/ESADout_CU:ESADout_CUGoodsShipment/ESADout_CU:ESADout_CUGoods/ESADout_CU:ESADout_CUPresentedDocument[2]"/>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>2010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>1702</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>34033</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>5</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+        <catESAD_cu:PaymentModeCode>5010</catESAD_cu:PaymentModeCode>
+        <catESAD_cu:PaymentAmount>7147</catESAD_cu:PaymentAmount>
+        <catESAD_cu:PaymentCurrencyCode>AMD</catESAD_cu:PaymentCurrencyCode>
+        <catESAD_cu:TaxBase>35735</catESAD_cu:TaxBase>
+        <catESAD_cu:TaxBaseCurrencyCode>AMD</catESAD_cu:TaxBaseCurrencyCode>
+        <catESAD_cu:Rate>20</catESAD_cu:Rate>
+        <catESAD_cu:RateCurrencyCode>AMD</catESAD_cu:RateCurrencyCode>
+        <catESAD_cu:PaymentCode>ИУ</catESAD_cu:PaymentCode>
+      </ESADout_CU:ESADout_CUCustomsPaymentCalculation>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>20</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>Հատ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>0</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PalleteInformation>
+          <catESAD_cu:PalleteDescription>Պալետ (տակդիր)</catESAD_cu:PalleteDescription>
+          <catESAD_cu:PalleteCode>PX</catESAD_cu:PalleteCode>
+        </catESAD_cu:PalleteInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+      <ESADout_CU:ElectricalEnergReceived>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergReceived>
+      <ESADout_CU:ElectricalEnergGiven>
+        <catESAD_cu:QualifierCode>246</catESAD_cu:QualifierCode>
+        <qualifierName>Հազար կիլովատ֊ժամ</qualifierName>
+        <qualifierNameEng>Հազար կիլովատ֊ժամ</qualifierNameEng>
+        <qualifierNameRus>1000 КИЛОВАТТ-ЧАС</qualifierNameRus>
+      </ESADout_CU:ElectricalEnergGiven>
+    </ESADout_CU:ESADout_CUGoods>
+  </ESADout_CU:ESADout_CUGoodsShipment>
+  <ESADout_CU:FilledPerson>
+    <cat_ru:PersonSurname>Mkrtchyan</cat_ru:PersonSurname>
+    <cat_ru:PersonName>Armen</cat_ru:PersonName>
+    <unn>06938022</unn>
+    <catESAD_cu:Contact>
+      <cat_ru:Phone>+374 (093)756055</cat_ru:Phone>
+      <cat_ru:E_mail>vanadzor@vanadzor.org</cat_ru:E_mail>
+    </catESAD_cu:Contact>
+  </ESADout_CU:FilledPerson>
+  <declarantUnn>06938022</declarantUnn>
+</ESADout_CU:ESADout_CU>

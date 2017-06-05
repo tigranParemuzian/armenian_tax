@@ -1,0 +1,63 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th><div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Select All
+                                </label>
+
+                            </div></th>
+                        {#<th>Status</th>#}
+                        <th>Author</th>
+                        <th>Created</th>
+                        <th>items</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for booking in data %}
+                        <tr>
+                            <th scope="row">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">{{ booking.id }}
+                                    </label>
+                                </div></th>
+                            {#<td>#}
+                                {#{% if booking.status == 1 %}#}
+                                    {#<span class="glyphicon glyphicon-ok"></span>#}
+                                {#{% else %}#}
+                                    {#<span class="glyphicon glyphicon-remove"></span>#}
+                                {#{% endif %}#}
+                            {#</td>#}
+                            {#<td>{{ booking.author }}</td>#}
+                            <td>{{ booking.created | date('Y-M-d') }}</td>
+                            <td>{{ booking.code }}</td>
+                            <td>
+                                <a href="{{ path('reference-generate-excel', {'referenceId':booking.id, 'state':1}) }}" type="button" class="btn btn-info">
+                                    Արձանագրություն
+                                </a>
+                                <a href="{{ path('reference-generate-excel', {'referenceId':booking.id, 'state':0}) }}" type="button" class="btn btn-info">
+                                    Ինքնարժեք
+                                </a>
+
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

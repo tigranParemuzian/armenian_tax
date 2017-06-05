@@ -135,6 +135,29 @@ class Item
     private $itemNumber;
 
     /**
+     * @var
+     * @ORM\Column(name="amount_national_currency", type="string", nullable=true)
+     */
+    private $amountNationalCurrency;
+
+    /**
+     * @return mixed
+     */
+    public function getAmountNationalCurrency()
+    {
+        return $this->amountNationalCurrency;
+    }
+
+    /**
+     * @param mixed $amountNationalCurrency
+     */
+    public function setAmountNationalCurrency($amountNationalCurrency)
+    {
+        $this->amountNationalCurrency = $amountNationalCurrency;
+    }
+
+
+    /**
      * @return mixed
      */
     public function getDescriptionOfGoods()
@@ -500,5 +523,29 @@ class Item
     public function getTarification()
     {
         return $this->tarification;
+    }
+
+    /**
+     * Set itemNumber
+     *
+     * @param integer $itemNumber
+     *
+     * @return Item
+     */
+    public function setItemNumber($itemNumber)
+    {
+        $this->itemNumber = $itemNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get itemNumber
+     *
+     * @return integer
+     */
+    public function getItemNumber()
+    {
+        return $this->itemNumber;
     }
 }

@@ -8,12 +8,14 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <th><div class="checkbox">
+                        <th>
+                            <div class="checkbox">
                                 <label>
                                     <input type="checkbox">Select All
                                 </label>
 
-                            </div></th>
+                            </div>
+                        </th>
                         <th>Status</th>
                         <th>Author</th>
                         <th>Created</th>
@@ -45,8 +47,11 @@
                                 <button class="btn btn-warning">
                                     <span class="glyphicon glyphicon-remove"></span>
                                 </button>
-                                <a href="{{ path('mah', {'bid':booking.id}) }}" type="button" class="btn btn-info">
+                                <a href="{{ path('mah', {'bid':booking.id, 'state':1}) }}" type="button" class="btn btn-info">
                                     <span class="glyphicon glyphicon-open"></span>
+                                </a>
+                                <a href="{{ path('mah', {'bid':booking.id, 'state':0}) }}" type="button" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-cloud"></span>
                                 </a>
                                 <a href="uploads/files/mah_{{ booking.id }}.xml" type="button" target="_blank" class="btn btn-info">
                                     <span class="glyphicon glyphicon-download-alt"></span>
