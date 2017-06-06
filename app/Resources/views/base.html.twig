@@ -81,7 +81,10 @@
                             Profile
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Analytics</a></li>
+                            {% if is_granted('ROLE_SUPER_ADMIN') %}
+                                <li><a href="{{ path('sonata_admin_dashboard') }}"><span class="glyphicon glyphicon-book">&nbsp;Dashboard</span></a></li>
+                                <li><a href="{{ path('excel-convert') }}">Excel Convert</a></li>
+                            {% endif %}
                             <li role="separator" class="divider"></li>
                             <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
                         </ul>

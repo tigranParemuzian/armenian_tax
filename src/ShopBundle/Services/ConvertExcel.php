@@ -164,7 +164,7 @@ class ConvertExcel
 
         $fs = new Filesystem();
         $fs->touch($file);
-        $fs->chown($file, 'www-data', true);
+//        $fs->chown($file, 'www-data', true);
 
 
         $phpExcelObject = $this->container->get('phpexcel')->createPHPExcelObject();

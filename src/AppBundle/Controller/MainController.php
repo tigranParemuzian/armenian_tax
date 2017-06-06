@@ -84,7 +84,7 @@ class MainController extends Controller
 
                     $file = $userDir.'/'.$fileName;
 
-                    $fs->chown($userDir.'/'.$fileName, 'www-data', true);
+//                    $fs->chown($userDir.'/'.$fileName, 'www-data', true);
 
                     if(true)
                     {
