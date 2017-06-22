@@ -84,8 +84,6 @@ class MainController extends Controller
 
                     $file = $userDir.'/'.$fileName;
 
-//                    $fs->chown($userDir.'/'.$fileName, 'www-data', true);
-
                     if(true)
                     {
                         $fileContents = file_get_contents($file);
@@ -120,6 +118,15 @@ class MainController extends Controller
 
                                 foreach ($t->ESADout_CUGoods as $i){
 
+                                    $taxBase = (float)$this->checkInfo($i->ESADout_CUCustomsPaymentCalculation->TaxBase);
+
+                                    foreach ($i as $key=>$value2){
+
+                                        if($key === 'ESADout_CUCustomsPaymentCalculation'){
+                                            $taxBase > (float)$value2->TaxBase ? $taxBase = (float)$value2->TaxBase : '';
+                                        }
+                                    }
+
                                     $referenceItem = new ReferenceItem();
                                     $referenceItem->setCode((string)$this->checkInfo($i->GoodsTNVEDCode));
                                     $referenceItem->setName((string)$this->checkInfo($i->GoodsDescription));
@@ -127,7 +134,7 @@ class MainController extends Controller
                                     $referenceItem->setBrutto((float)$this->checkInfo($i->GrossWeightQuantity));
                                     $referenceItem->setNetto((float)$this->checkInfo($i->NetWeightQuantity));
                                     $referenceItem->setPrice((float)$this->checkInfo($i->InvoicedCost));
-                                    $referenceItem->setTaxPrice((float)$this->checkInfo($i->ESADout_CUCustomsPaymentCalculation->TaxBase));
+                                    $referenceItem->setTaxPrice((float)$taxBase);
                                     $referenceItem->setParentCode((string)$this->checkInfo($i->GoodsAddTNVEDCode));
                                     $referenceItem->setCountryCode((string)$this->checkInfo($i->OriginCountryCode));
                                     $referenceItem->setCountryName((string)$this->checkInfo($i->OriginCountryName));
