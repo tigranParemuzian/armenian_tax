@@ -285,14 +285,16 @@ class ConvertExcel
             $brutto += $item->getBrutto();
             $netto +=$item->getNetto();
             $price +=$item->getPrice();
-            $count +=$item->getCount();
+
+            (int)$item->getUnitCode() == 796 ? $count += $item->getCount() : ' ';
+
             $pakageQuantity +=$item->getPakageQuantity();
         }
             $last = $j;
         switch ($state) {
             case 1:
             $phpExcelObject->setActiveSheetIndex(0)
-                ->setCellValue("A" . $last, "$i")
+                ->setCellValue("A" . $last, " ")
                 ->setCellValue('B' . $last, " ")
                 ->setCellValue('C' . $last, "{$pakageQuantity}")
                 ->setCellValue('D' . $last, "{$brutto}")
@@ -303,14 +305,17 @@ class ConvertExcel
             break;
             case 2:
                 $phpExcelObject->setActiveSheetIndex(0)
-                    ->setCellValue("A" . $last, "$i")
+                    ->setCellValue("A" . $last, " ")
                     ->setCellValue('B' . $last, " ")
-                    ->setCellValue('C' . $last, "{$pakageQuantity}")
-                    ->setCellValue('D' . $last, "{$brutto}")
-                    ->setCellValue('E' . $last, "{$netto}")
-                    ->setCellValue('F' . $last, "{$count}")
-                    ->setCellValue('G' . $last, "{$price}")
-                    ->setCellValue('H' . $last, " ");
+                    ->setCellValue('C' . $last, " ")
+                    ->setCellValue('D' . $last, " ")
+                    ->setCellValue('E' . $last, " ")
+                    ->setCellValue('F' . $last, " ")
+                    ->setCellValue('G' . $last, "{$brutto}")
+                    ->setCellValue('H' . $last, "{$netto}")
+                    ->setCellValue('I' . $last, "{$count}")
+                    ->setCellValue('J' . $last, "{$price}")
+                    ->setCellValue('K' . $last, " ");
                 break;
             default :
                 $phpExcelObject->getProperties()->setCreator("liuggio")
