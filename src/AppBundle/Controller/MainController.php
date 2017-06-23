@@ -120,11 +120,23 @@ class MainController extends Controller
 
                                     $taxBase = (float)$this->checkInfo($i->ESADout_CUCustomsPaymentCalculation->TaxBase);
 
-                                    foreach ($i as $key=>$value2){
+                                    if(count($i->ESADout_CUCustomsPaymentCalculation) >1){
 
-                                        if($key === 'ESADout_CUCustomsPaymentCalculation'){
-                                            $taxBase > (float)$value2->TaxBase ? $taxBase = (float)$value2->TaxBase : '';
+                                        $taxParent = 0;
+                                        $taxAm = 0;
+                                        foreach ($i as $key=>$value2){
+
+                                            if($key === 'ESADout_CUCustomsPaymentCalculation' && $value2->PaymentModeCode == '5010'){
+
+                                                $taxParent = (float)$value2->TaxBase;
+                                            }
+
+                                            if($key === 'ESADout_CUCustomsPaymentCalculation' && $value2->PaymentModeCode == '2010'){
+                                                $taxAm = (float)$value2->PaymentAmount;
+                                            }
                                         }
+
+                                        $taxBase = $taxParent - $taxAm;
                                     }
 
                                     $referenceItem = new ReferenceItem();

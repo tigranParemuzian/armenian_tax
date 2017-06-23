@@ -235,6 +235,8 @@ class ConvertExcel
         $price = 0;
         $count = 0;
         $pakageQuantity = 0;
+        $maxUSDSumm = 0;
+        $routePriceSumm = 0;
         foreach ($data as $item){
 
             switch ($state) {
@@ -254,9 +256,9 @@ class ConvertExcel
                 break;
             case 2:
                 $maxUSD = round($item->getTaxPrice()/$item->getCurrencyRate(), 2);
-
+                $maxUSDSumm +=$maxUSD;
                 $routePrice = round(($item->getTaxPrice()-($item->getPrice()*$item->getCurrencyRate())), 2);
-
+                $routePriceSumm += $routePrice;
                 $phpExcelObject->setActiveSheetIndex(0)
                     ->setCellValue('A'.$j, "$i")
                     ->setCellValue('B'.$j, "{$item->getName()}")
@@ -316,9 +318,9 @@ class ConvertExcel
                     ->setCellValue('FG' . $last, "{$brutto}")
                     ->setCellValue('G' . $last, "{$netto}")
                     ->setCellValue('H' . $last, "{$count}")
-                    ->setCellValue('I' . $last, " ")
+                    ->setCellValue('I' . $last, "{$maxUSDSumm}")
                     ->setCellValue('J' . $last, "{$price}")
-                    ->setCellValue('K' . $last, " ");
+                    ->setCellValue('K' . $last, "{$routePriceSumm}");
                 break;
             default :
                 $phpExcelObject->getProperties()->setCreator("liuggio")
