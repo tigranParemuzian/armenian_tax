@@ -207,12 +207,13 @@ class ConvertExcel
                     ->setCellValue('C4', 'Ապրանքի  անվանումը РУ')
                     ->setCellValue('D4', 'Կոդե')
                     ->setCellValue('E4', 'Կոդեի պոչ')
-                    ->setCellValue('F4', 'Մաքսային արժեք USD')
-                    ->setCellValue('G4', 'քաշը բրուտտո')
-                    ->setCellValue('H4', 'քաշը նետտո')
-                    ->setCellValue('I4', 'քանակ հատ')
+                    ->setCellValue('F4', 'քաշը բրուտտո')
+                    ->setCellValue('G4', 'քաշը նետտո')
+                    ->setCellValue('H4', 'քանակ հատ')
+                    ->setCellValue('I4', "մաքսային արժեք {$data[0]->getCurrencyName()}")
                     ->setCellValue('J4', "գումար {$data[0]->getCurrencyName()}")
-                    ->setCellValue('K4', 'ծագման երկիր')
+                    ->setCellValue('K4', "Ճանապարհածախս")
+                    ->setCellValue('L4', 'ծագման երկիր')
                 ;
                 break;
             default:
@@ -255,18 +256,22 @@ class ConvertExcel
                 break;
             case 2:
                 $maxUSD = round($item->getTaxPrice()/$item->getCurrencyRate(), 2);
+                
+                $routePrice = round((($item->getTaxPrice()/$item->getCurrencyRate())-$item->getPrice())*$item->getCurrencyRate(), 2);
+
                 $phpExcelObject->setActiveSheetIndex(0)
                     ->setCellValue('A'.$j, "$i")
                     ->setCellValue('B'.$j, "{$item->getName()}")
                     ->setCellValue('C'.$j, "{$item->getNameRu()}")
                     ->setCellValue('D'.$j, "{$item->getCode()}")
                     ->setCellValue('E'.$j, "{$item->getParentCode()}")
-                    ->setCellValue('F'.$j, "{$maxUSD}")
-                    ->setCellValue('G'.$j, "{$item->getBrutto()}")
-                    ->setCellValue('H'.$j, "{$item->getNetto()}")
-                    ->setCellValue('I'.$j, "{$item->getCount()}")
+                    ->setCellValue('F'.$j, "{$item->getBrutto()}")
+                    ->setCellValue('G'.$j, "{$item->getNetto()}")
+                    ->setCellValue('H'.$j, "{$item->getCount()}")
+                    ->setCellValue('G'.$j, "{$maxUSD}")
                     ->setCellValue('J'.$j, "{$item->getPrice()}")
-                    ->setCellValue('K'.$j, "{$item->getCountryName()}")
+                    ->setCellValue('K'.$j, "{$routePrice}")
+                    ->setCellValue('L'.$j, "{$item->getCountryName()}")
                 ;
                 break;
             default :
