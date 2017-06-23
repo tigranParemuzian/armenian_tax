@@ -159,18 +159,16 @@ class ConvertExcel
             case 1 :
                 $title ='Արձանագրություն';
                 break;
-            case 0 :
-                $title='Ինքնարժեք';
-                break;
             case 2 :
                 $title='Կոդերի Ցանկ';
                 break;
             default:
+                $title='Ինքնարժեք';
                 break;
         }
 
         $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files/'.$data[0]->getReference()->getUser()->getUsername().'/';
-        $fileName = $title.'_'.$data[0]->getReference()->getCode().'.xls';
+        $fileName = str_replace(' ', '_',$title).'_'. $data[0]->getCompanyFrom() .'_'.$data[0]->getReference()->getCode().'.xls';
 
         $file = $brochuresDir.$fileName;
 
