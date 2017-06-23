@@ -8,15 +8,16 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <th><div class="checkbox">
+                        <th>
+                            <div class="checkbox">
                                 <label>
                                     <input type="checkbox">Select All
                                 </label>
-
-                            </div></th>
-                        {#<th>Status</th>#}
+                            </div>
+                        </th>
                         <th>Author</th>
                         <th>Created</th>
+                        <th class="text-capitalize">Company From</th>
                         <th>items</th>
                         <th>Actions</th>
                     </tr>
@@ -30,16 +31,9 @@
                                         <input type="checkbox">{{ booking.id }}
                                     </label>
                                 </div></th>
-                            {#<td>#}
-                                {#{% if booking.status == 1 %}#}
-                                    {#<span class="glyphicon glyphicon-ok"></span>#}
-                                {#{% else %}#}
-                                    {#<span class="glyphicon glyphicon-remove"></span>#}
-                                {#{% endif %}#}
-                            {#</td>#}
-                            {#<td>{{ booking.author }}</td>#}
-                            <td>{{ booking.created | date('Y-M-d') }}</td>
-                            <td>{{ booking.code }}</td>
+                            <td>{{ booking.user.lastName~' '~booking.user.lastName }}</td>
+                            <td>{{ booking.created | date('Y-M-d H:i') }}</td>
+                            <td class="text-capitalize">{{ booking.referenceItem.first.companyFrom }}</td>
                             <td>
                                 <a href="{{ path('reference-generate-excel', {'referenceId':booking.id, 'state':1}) }}" type="button" class="btn btn-info">
                                     Արձանագրություն

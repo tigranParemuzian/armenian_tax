@@ -256,8 +256,8 @@ class ConvertExcel
                 break;
             case 2:
                 $maxUSD = round($item->getTaxPrice()/$item->getCurrencyRate(), 2);
-                
-                $routePrice = round((($item->getTaxPrice()/$item->getCurrencyRate())-$item->getPrice())*$item->getCurrencyRate(), 2);
+
+                $routePrice = round(($item->getTaxPrice()-($item->getPrice()*$item->getCurrencyRate())), 2);
 
                 $phpExcelObject->setActiveSheetIndex(0)
                     ->setCellValue('A'.$j, "$i")
