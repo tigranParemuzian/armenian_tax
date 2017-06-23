@@ -155,7 +155,19 @@ class ConvertExcel
         ini_set('max_execution_time', '1200');
 
         $em = $this->container->get('doctrine')->getManager();
-        $state ==1 ? $title ='Արձանագրություն' : $title='Ինքնարժեք';
+        switch ($state) {
+            case 1 :
+                $title ='Արձանագրություն';
+                break;
+            case 0 :
+                $title='Ինքնարժեք';
+                break;
+            case 2 :
+                $title='Կոդերի Ցանկ';
+                break;
+            default:
+                break;
+        }
 
         $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files/'.$data[0]->getReference()->getUser()->getUsername().'/';
         $fileName = $title.'_'.$data[0]->getReference()->getCode().'.xls';
@@ -169,30 +181,51 @@ class ConvertExcel
 
         $phpExcelObject = $this->container->get('phpexcel')->createPHPExcelObject();
 
-        if($state ==1){
-            $phpExcelObject->setActiveSheetIndex(0)
-                ->setCellValue('B1', "«{$data[0]->getCompanyName()}» ՍՊԸ-ի")
-                ->setCellValue('B2', 'կողմից  ՀՀ   ներմուծված ապրանքների  նախնական  զննությամբ ճշտված տվյալներով')
-                ->setCellValue('C3', $title)
-                ->setCellValue('A4', 'հ/հ')
-                ->setCellValue('B4', 'Ապրանքի  անվանումը')
-                ->setCellValue('C4', 'տեղերի քանակ')
-                ->setCellValue('D4', 'քաշը բրուտտո')
-                ->setCellValue('E4', 'քաշը նետտո')
-                ->setCellValue('F4', 'քանակ հատ')
-                ->setCellValue('G4', "գումար {$data[0]->getCurrencyName()}")
-                ->setCellValue('H4', 'ծագման երկիր')
-            ;
-        }else{
-            $phpExcelObject->setActiveSheetIndex(0)
-                ->setCellValue('B1', "«{$data[0]->getCompanyName()}» ՍՊԸ-ի")
-                ->setCellValue('B2', 'կողմից  ՀՀ   ներմուծված ապրանքների  նախնական  զննությամբ ճշտված տվյալներով')
-                ->setCellValue('C3', $title)
-                ->setCellValue('A4', 'հ/հ')
-                ->setCellValue('B4', 'Ապրանքի  անվանումը')
-                ->setCellValue('C4', 'Ըստ հատի')
-                ->setCellValue('D4', 'Ըստ քաշի')
-            ;
+        switch ($state) {
+            case 1:
+                $phpExcelObject->setActiveSheetIndex(0)
+                    ->setCellValue('B1', "«{$data[0]->getCompanyName()}» ՍՊԸ-ի")
+                    ->setCellValue('B2', 'կողմից  ՀՀ   ներմուծված ապրանքների  նախնական  զննությամբ ճշտված տվյալներով')
+                    ->setCellValue('C3', $title)
+                    ->setCellValue('A4', 'հ/հ')
+                    ->setCellValue('B4', 'Ապրանքի  անվանումը')
+                    ->setCellValue('C4', 'տեղերի քանակ')
+                    ->setCellValue('D4', 'քաշը բրուտտո')
+                    ->setCellValue('E4', 'քաշը նետտո')
+                    ->setCellValue('F4', 'քանակ հատ')
+                    ->setCellValue('G4', "գումար {$data[0]->getCurrencyName()}")
+                    ->setCellValue('H4', 'ծագման երկիր')
+                ;
+                break;
+            case 2:
+                $phpExcelObject->setActiveSheetIndex(0)
+                    ->setCellValue('B1', "«{$data[0]->getCompanyName()}» ՍՊԸ-ի")
+                    ->setCellValue('B2', 'կողմից  ՀՀ   ներմուծված ապրանքների  նախնական  զննությամբ ճշտված տվյալներով')
+                    ->setCellValue('C3', $title)
+                    ->setCellValue('A4', 'հ/հ')
+                    ->setCellValue('B4', 'Ապրանքի  անվանումը')
+                    ->setCellValue('C4', 'Ապրանքի  անվանումը РУ')
+                    ->setCellValue('D4', 'Կոդե')
+                    ->setCellValue('E4', 'Կոդեի պոչ')
+                    ->setCellValue('F4', 'Մաքսային արժեք USD')
+                    ->setCellValue('G4', 'քաշը բրուտտո')
+                    ->setCellValue('H4', 'քաշը նետտո')
+                    ->setCellValue('I4', 'քանակ հատ')
+                    ->setCellValue('J4', "գումար {$data[0]->getCurrencyName()}")
+                    ->setCellValue('K4', 'ծագման երկիր')
+                ;
+                break;
+            default:
+                $phpExcelObject->setActiveSheetIndex(0)
+                    ->setCellValue('B1', "«{$data[0]->getCompanyName()}» ՍՊԸ-ի")
+                    ->setCellValue('B2', 'կողմից  ՀՀ   ներմուծված ապրանքների  նախնական  զննությամբ ճշտված տվյալներով')
+                    ->setCellValue('C3', $title)
+                    ->setCellValue('A4', 'հ/հ')
+                    ->setCellValue('B4', 'Ապրանքի  անվանումը')
+                    ->setCellValue('C4', 'Ըստ հատի')
+                    ->setCellValue('D4', 'Ըստ քաշի')
+                ;
+                break;
         }
 
 
@@ -204,18 +237,39 @@ class ConvertExcel
         $count = 0;
         $pakageQuantity = 0;
         foreach ($data as $item){
-            if($state == 1){
+
+            switch ($state) {
+                case 1:
+
+                    (int)$item->getUnitCode() == 796 ? $cnt = $item->getCount() : $cnt = ' ';
                 $phpExcelObject->setActiveSheetIndex(0)
                     ->setCellValue('A'.$j, "$i")
                     ->setCellValue('B'.$j, "{$item->getName()}")
                     ->setCellValue('C'.$j, "{$item->getPakageQuantity()}")
                     ->setCellValue('D'.$j, "{$item->getBrutto()}")
                     ->setCellValue('E'.$j, "{$item->getNetto()}")
-                    ->setCellValue('F'.$j, "{$item->getCount()}")
+                    ->setCellValue('F'.$j, "{$cnt}")
                     ->setCellValue('G'.$j, "{$item->getPrice()}")
                     ->setCellValue('H'.$j, "{$item->getCountryName()}")
                 ;
-            }else{
+                break;
+            case 2:
+                $maxUSD = round($item->getTaxPrice()/$item->getCurrencyRate(), 2);
+                $phpExcelObject->setActiveSheetIndex(0)
+                    ->setCellValue('A'.$j, "$i")
+                    ->setCellValue('B'.$j, "{$item->getName()}")
+                    ->setCellValue('C'.$j, "{$item->getNameRu()}")
+                    ->setCellValue('D'.$j, "{$item->getCode()}")
+                    ->setCellValue('E'.$j, "{$item->getParentCode()}")
+                    ->setCellValue('F'.$j, "{$maxUSD}")
+                    ->setCellValue('G'.$j, "{$item->getBrutto()}")
+                    ->setCellValue('H'.$j, "{$item->getNetto()}")
+                    ->setCellValue('I'.$j, "{$item->getCount()}")
+                    ->setCellValue('J'.$j, "{$item->getPrice()}")
+                    ->setCellValue('K'.$j, "{$item->getCountryName()}")
+                ;
+                break;
+            default :
                 $phpExcelObject->setActiveSheetIndex(0)
                     ->setCellValue('A'.$j, "$i")
                     ->setCellValue('B'.$j, "{$item->getName()}")
@@ -223,9 +277,10 @@ class ConvertExcel
                     ->setCellValue('D'.$j, "{$item->getCalcByWeight()}")
 
                 ;
+                break;
             }
 
-                $i++;
+            $i++;
             $j++;
             $brutto += $item->getBrutto();
             $netto +=$item->getNetto();
@@ -234,7 +289,8 @@ class ConvertExcel
             $pakageQuantity +=$item->getPakageQuantity();
         }
             $last = $j;
-        if($state == 1) {
+        switch ($state) {
+            case 1:
             $phpExcelObject->setActiveSheetIndex(0)
                 ->setCellValue("A" . $last, "$i")
                 ->setCellValue('B' . $last, " ")
@@ -244,16 +300,29 @@ class ConvertExcel
                 ->setCellValue('F' . $last, "{$count}")
                 ->setCellValue('G' . $last, "{$price}")
                 ->setCellValue('H' . $last, " ");
+            break;
+            case 2:
+                $phpExcelObject->setActiveSheetIndex(0)
+                    ->setCellValue("A" . $last, "$i")
+                    ->setCellValue('B' . $last, " ")
+                    ->setCellValue('C' . $last, "{$pakageQuantity}")
+                    ->setCellValue('D' . $last, "{$brutto}")
+                    ->setCellValue('E' . $last, "{$netto}")
+                    ->setCellValue('F' . $last, "{$count}")
+                    ->setCellValue('G' . $last, "{$price}")
+                    ->setCellValue('H' . $last, " ");
+                break;
+            default :
+                $phpExcelObject->getProperties()->setCreator("liuggio")
+                    ->setLastModifiedBy("Giulio De Donato")
+                    ->setTitle("Office 2005 XLSX Test Document")
+                    ->setSubject("Office 2005 XLSX Test Document")
+                    //todo: company info
+                    ->setDescription("Արձանագրություն.")
+                    ->setKeywords("office 2005 openxml php")
+                    ->setCategory("Test result file");
+            break;
         }
-
-        $phpExcelObject->getProperties()->setCreator("liuggio")
-            ->setLastModifiedBy("Giulio De Donato")
-            ->setTitle("Office 2005 XLSX Test Document")
-            ->setSubject("Office 2005 XLSX Test Document")
-            //todo: company info
-            ->setDescription("Արձանագրություն.")
-            ->setKeywords("office 2005 openxml php")
-            ->setCategory("Test result file");
 
         $phpExcelObject->getActiveSheet()->setTitle($title);
         // Set active sheet index to the first sheet, so Excel opens this as the first sheet
