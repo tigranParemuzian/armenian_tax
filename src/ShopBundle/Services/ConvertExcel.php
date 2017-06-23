@@ -268,7 +268,7 @@ class ConvertExcel
                     ->setCellValue('F'.$j, "{$item->getBrutto()}")
                     ->setCellValue('G'.$j, "{$item->getNetto()}")
                     ->setCellValue('H'.$j, "{$item->getCount()}")
-                    ->setCellValue('G'.$j, "{$maxUSD}")
+                    ->setCellValue('I'.$j, "{$maxUSD}")
                     ->setCellValue('J'.$j, "{$item->getPrice()}")
                     ->setCellValue('K'.$j, "{$routePrice}")
                     ->setCellValue('L'.$j, "{$item->getCountryName()}")
@@ -315,10 +315,10 @@ class ConvertExcel
                     ->setCellValue('C' . $last, " ")
                     ->setCellValue('D' . $last, " ")
                     ->setCellValue('E' . $last, " ")
-                    ->setCellValue('F' . $last, " ")
-                    ->setCellValue('G' . $last, "{$brutto}")
-                    ->setCellValue('H' . $last, "{$netto}")
-                    ->setCellValue('I' . $last, "{$count}")
+                    ->setCellValue('FG' . $last, "{$brutto}")
+                    ->setCellValue('G' . $last, "{$netto}")
+                    ->setCellValue('H' . $last, "{$count}")
+                    ->setCellValue('I' . $last, " ")
                     ->setCellValue('J' . $last, "{$price}")
                     ->setCellValue('K' . $last, " ");
                 break;
