@@ -7,6 +7,7 @@ use AppBundle\Entity\Booking;
 use AppBundle\Entity\Footer;
 use AppBundle\Entity\Header;
 use AppBundle\Entity\Item;
+use AppBundle\Entity\Locations;
 use AppBundle\Entity\Reference;
 use AppBundle\Entity\ReferenceItem;
 use AppBundle\Entity\Tarification;
@@ -267,6 +268,40 @@ class MainController extends Controller
         }
 
         return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));
+    }
+
+    /**
+     * @Route("/location/{lat}/long/{log}", name="reference-list")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     */
+    public function locationAction(Request $request, $lat, $log){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $location = new Locations();
+        $location->setLat($lat);
+        $location->setLog($log);
+
+        $em->persist($location);
+        $em->flush();
+
+        return new JsonResponse('Tk', Response::HTTP_OK);
+
+        /*$reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
+
+
+        if (!$reference){
+            $this->addFlash(
+                'error',
+                'Reference not found.'
+            );
+
+            return $this->redirectToRoute('create-reference');
+        }
+
+        return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));*/
     }
 
 
