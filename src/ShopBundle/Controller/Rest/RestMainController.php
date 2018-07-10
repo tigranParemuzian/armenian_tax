@@ -9,6 +9,7 @@
 namespace ShopBundle\Controller\Rest;
 
 
+use AppBundle\Entity\Locations;
 use FOS\RestBundle\Controller\Annotations\RouteResource;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Controller\FOSRestController;
@@ -64,6 +65,33 @@ class RestMainController extends FOSRestController
             return new JsonResponse('0 bookings' , Response::HTTP_NOT_FOUND);
         }
         return $bookings;
+    }
+
+    /**
+     * This function return bag info
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Tax",
+     *  description="This function is used to get a all Articles.",
+     *  statusCodes={
+     *         200="Returned when successful",
+     *     }
+     * )
+     * @Rest\View()
+     */
+    public function getLocatinAction(Request $request,  $lat, $log)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $location = new Locations();
+        $location->setLat($lat);
+        $location->setLog($log);
+
+        $em->persist($location);
+        $em->flush();
+
+        return new JsonResponse('Tk', Response::HTTP_OK);
     }
 
     /**
