@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940ff000-0819-4d04-bd93-f2b1892d3903" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/Rest/RestMainController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/Rest/RestMainController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
-              <caret line="289" column="57" lean-forward="true" selection-start-line="280" selection-start-column="8" selection-end-line="289" selection-end-column="57" />
+              <caret line="289" column="57" lean-forward="false" selection-start-line="280" selection-start-column="8" selection-end-line="289" selection-end-column="57" />
               <folding>
                 <element signature="e#9863#9879#1#PHP" expanded="true" />
                 <element signature="e#11008#11027#1#PHP" expanded="true" />
@@ -139,7 +143,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="648">
               <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="28" />
-              <folding />
+              <folding>
+                <marker date="1531214582983" expanded="true" signature="269:1458" ph="{&quot;php&quot;: &quot;&gt;=5.3.9&quot;...}" />
+                <marker date="1531214582983" expanded="true" signature="1479:1570" ph="{&quot;sensio/generator-bundle&quot;: &quot;~3.0&quot;...}" />
+                <marker date="1531214582983" expanded="true" signature="1587:2318" ph="{...}" />
+                <marker date="1531214582983" expanded="true" signature="1616:2169" ph="[...]" />
+                <marker date="1531214582983" expanded="true" signature="2199:2241" ph="[...]" />
+                <marker date="1531214582983" expanded="true" signature="2334:2426" ph="{&quot;bin-dir&quot;: &quot;bin&quot;...}" />
+                <marker date="1531214582983" expanded="true" signature="2382:2420" ph="{&quot;php&quot;: &quot;7.0.8&quot;...}" />
+                <marker date="1531214582983" expanded="true" signature="2589:2648" ph="{&quot;file&quot;: &quot;app/config/parameters.yml&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +160,8 @@
       <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="378">
+              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -158,17 +171,17 @@
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+              <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestMainController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestMainController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShopBundle/Controller/Rest/RestMainController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
-              <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+              <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
               <folding>
                 <element signature="e#129#160#0#PHP" expanded="true" />
               </folding>
@@ -176,11 +189,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="667">
+              <caret line="125" column="10" lean-forward="true" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -250,6 +263,8 @@
         <option value="$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/src/ShopBundle/Controller/Rest/RestMainController.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
       </list>
     </option>
   </component>
@@ -261,10 +276,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="x" value="61" />
+    <option name="y" value="24" />
+    <option name="width" value="1219" />
+    <option name="height" value="776" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -471,12 +486,12 @@
       <workItem from="1519071832725" duration="943000" />
       <workItem from="1522953344431" duration="4545000" />
       <workItem from="1524080373101" duration="697000" />
-      <workItem from="1531211868090" duration="1570000" />
+      <workItem from="1531211868090" duration="2031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52495000" />
+    <option name="totallyTimeSpent" value="52956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1012" extended-state="6" />
@@ -792,15 +807,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1531214582983" expanded="true" signature="269:1458" ph="{&quot;php&quot;: &quot;&gt;=5.3.9&quot;...}" />
+            <marker date="1531214582983" expanded="true" signature="1479:1570" ph="{&quot;sensio/generator-bundle&quot;: &quot;~3.0&quot;...}" />
+            <marker date="1531214582983" expanded="true" signature="1587:2318" ph="{...}" />
+            <marker date="1531214582983" expanded="true" signature="1616:2169" ph="[...]" />
+            <marker date="1531214582983" expanded="true" signature="2199:2241" ph="[...]" />
+            <marker date="1531214582983" expanded="true" signature="2334:2426" ph="{&quot;bin-dir&quot;: &quot;bin&quot;...}" />
+            <marker date="1531214582983" expanded="true" signature="2382:2420" ph="{&quot;php&quot;: &quot;7.0.8&quot;...}" />
+            <marker date="1531214582983" expanded="true" signature="2589:2648" ph="{&quot;file&quot;: &quot;app/config/parameters.yml&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -808,14 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -831,7 +839,7 @@
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -839,7 +847,7 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="289" column="57" lean-forward="true" selection-start-line="280" selection-start-column="8" selection-end-line="289" selection-end-column="57" />
+          <caret line="289" column="57" lean-forward="false" selection-start-line="280" selection-start-column="8" selection-end-line="289" selection-end-column="57" />
           <folding>
             <element signature="e#9863#9879#1#PHP" expanded="true" />
             <element signature="e#11008#11027#1#PHP" expanded="true" />
@@ -867,10 +875,26 @@
     <entry file="file://$PROJECT_DIR$/src/ShopBundle/Controller/Rest/RestMainController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+          <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
           <folding>
             <element signature="e#129#160#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="125" column="10" lean-forward="true" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

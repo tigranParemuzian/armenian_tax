@@ -35,7 +35,8 @@
         "doctrine/doctrine-migrations-bundle": "1.0.0",
         "knplabs/knp-paginator-bundle": "^2.5",
         "liuggio/ExcelBundle": "^2.1",
-        "apy/datagrid-bundle": "^3.0"
+        "apy/datagrid-bundle": "^3.0",
+        "nelmio/cors-bundle": "^1.5"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
