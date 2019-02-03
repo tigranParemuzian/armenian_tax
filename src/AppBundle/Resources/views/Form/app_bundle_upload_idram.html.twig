@@ -1,0 +1,11 @@
+{% block app_bundle_upload_idram_widget %}
+
+    {% for key, children in form.children %}
+        <div class="form-group {{ children.vars.attr.class is defined ? children.vars.attr.class : ''}}">
+            {{ form_label(children) }}
+            {{ form_errors(children) }}
+            {{ form_widget(children) }}
+        </div>
+    {% endfor %}
+
+{% endblock app_bundle_upload_idram_widget %}

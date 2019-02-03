@@ -12,6 +12,14 @@ services:
           class: ShopBundle\Services\ConvertExcel
           arguments: ['@service_container']
 
+
+      app.form.type.upload.idram:
+        class: AppBundle\Form\UploadIdramType
+        tags:
+        - { name: form.type, alias: app_bundle_upload_idram }
+        public: true
+
+
       app.admin.user:
           class: ShopBundle\Admin\UserAdmin
           arguments: [~, AppBundle\Entity\User, SonataAdminBundle:CRUD]
@@ -30,11 +38,23 @@ services:
           tags:
               - {name: sonata.admin, manager_type: orm, group: Menu, label: Company Category, show_in_dashboard: true }
 
+      sonata.admin.i_dram_info:
+          class: AppBundle\Admin\IdramInfoAdmin
+          arguments: [~, AppBundle\Entity\IdramInfo, ~]
+          tags:
+              - {name: sonata.admin, manager_type: orm, group: Menu, label: Idram, show_in_dashboard: true }
+
       sonata.admin.address:
           class: ShopBundle\Admin\AddressAdmin
           arguments: [~, ShopBundle\Entity\Address, ~]
           tags:
               - {name: sonata.admin, manager_type: orm, group: Menu, label: Address, show_in_dashboard: true }
+
+      sonata.admin.i_dram.group:
+          class: AppBundle\Admin\IdramGroupsAdmin
+          arguments: [~, AppBundle\Entity\IdramGroups, ~]
+          tags:
+              - {name: sonata.admin, manager_type: orm, group: Menu, label: Idram Groups, show_in_dashboard: true }
 
       sonata.admin.phone:
           class: ShopBundle\Admin\PhoneAdmin

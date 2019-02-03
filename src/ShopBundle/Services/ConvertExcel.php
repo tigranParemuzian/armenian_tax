@@ -1,6 +1,8 @@
 <?php
 
 namespace ShopBundle\Services;
+use AppBundle\Entity\IdramGroups;
+use AppBundle\Entity\IdramInfo;
 use ShopBundle\Entity\CacheCodes;
 use ShopBundle\Entity\Invoice;
 use ShopBundle\Entity\InvoiceItem;
@@ -41,6 +43,92 @@ class ConvertExcel
         $offset += 1;
         if ($offset >= strlen($string)) $offset = -1;
         return $code;
+    }
+
+    public function iDramCalculate($file) {
+
+        $phpexcel = $this->container->get('phpexcel');
+
+        $em = $this->container->get('doctrine')->getManager();
+
+        $dataExcel = $phpexcel->createPHPExcelObject($file);
+        $driverColes = array('A'=>'Օպերատոր', 'B'=>'Համար', 'C'=>'Գումար', 'D'=>'Միջնորդավճար', 'E'=>'Անդորրագիր', 'F'=>'Վճարման ժամը');
+        $row = 2;
+        $dates = array();
+        do {
+
+
+            foreach ($driverColes as $key => $cole) {
+
+                $data = $dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
+                if(!is_null($data)) {
+
+                    switch ($key) {
+                        case 'A':
+
+                            $dates[$row][$cole] = (string)$dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
+                        break;
+                        case 'F':
+                            $dates[$row][$cole] = new \DateTime($dataExcel->getActiveSheet()->getCell($key . $row)->getValue());
+                            break;
+                        default:
+                            $dates[$row][$cole] = (int)$dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
+                            break;
+                    }
+
+                }
+
+            }
+            $found = (!empty($dates[$row][$driverColes['A']])) ? true : false;
+            $row++;
+
+        }while ($found);
+
+
+
+
+        $inter = 0;
+        foreach ($dates as $data) {
+
+            $infp = $em->getRepository('AppBundle:IdramInfo')->findOneBy(array('number'=>$data['Անդորրագիր']));
+            if(!$infp) {
+
+                $infp = new IdramInfo();
+                $infp ->setNumber($data['Անդորրագիր']);
+                $infp ->setParentCost($data['Միջնորդավճար']);
+                $infp ->setDueDate($data['Վճարման ժամը']);
+                $infp ->setConst($data['Գումար']);
+
+                $group = $em->getRepository('AppBundle:IdramGroups')->findOneBy(array('code'=>$data['Համար']));
+
+                if(!$group) {
+
+                    $group = new IdramGroups();
+                    $group->setName($data['Օպերատոր']);
+                    $group->setCode($data['Համար']);
+                    $em->persist($group);
+                    $em->flush();
+                }
+
+                $infp->setGroups($group);
+
+                $em->persist($infp);
+                $inter++;
+
+            }
+
+
+        }
+
+        if($inter >1000) {
+
+            $em->flush();
+        }
+
+        $em->flush();
+
+        return true;
+
     }
 
     /**

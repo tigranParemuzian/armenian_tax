@@ -11,6 +11,7 @@ use AppBundle\Entity\Locations;
 use AppBundle\Entity\Reference;
 use AppBundle\Entity\ReferenceItem;
 use AppBundle\Entity\Tarification;
+use AppBundle\Form\UploadIdramType;
 use AppBundle\Form\UploadXmlType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
@@ -244,6 +245,47 @@ class MainController extends Controller
     }
 
 
+    /**
+     * @Route("/i-dram", name="i-dram")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     * @Template()
+     */
+    public function idramAction(Request $request){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $form = $this->createForm(new UploadIdramType());
+
+
+        if($request->isMethod('POST')) {
+
+            // get request & check
+            $form->handleRequest($request);
+            //check form validation
+            if ($form->isValid()) {
+                $fs = new Filesystem();
+
+                $brochuresDir = $this->container->getParameter('kernel.root_dir') . '/../web/uploads/files';
+
+                $userDir = $brochuresDir. '/'.str_replace('.', '', str_replace('/', '_', $this->getUser()->getUsername()));
+                $fs->mkdir($userDir);
+
+                // form get date
+                $data = $form->getData();
+                $file = $data['file'];
+
+                $calculatorService = $this->get('app.convert.excel')->iDramCalculate($file);
+
+                return $this->redirectToRoute('sonata_admin_dashboard');
+            }
+        }
+
+                return $this->render('@App/Main/idram.html.twig', array('form'=>$form->createView()));
+    }
+
+
 
     /**
      * @Route("/reference/list", name="reference-list")
@@ -394,6 +436,19 @@ class MainController extends Controller
         $xlsTypes = array('application/xml',
             'applic ation/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
             'application/vnd.ms-office',
+            'application/vnd.ms-excel');
+
+        return $xlsTypes;
+    }
+
+
+    /**
+     * This function check import file type
+     * @return array
+     */
+    private function excelTypes()
+    {
+        $xlsTypes = array('application/vnd.ms-excel',
             'application/vnd.ms-excel');
 
         return $xlsTypes;
