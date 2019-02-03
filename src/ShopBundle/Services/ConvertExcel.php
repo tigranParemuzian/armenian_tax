@@ -69,7 +69,6 @@ class ConvertExcel
                             $dates[$row][$cole] = (string)$dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
                         break;
                         case 'E':
-
                             $dates[$row][$cole] = (string)$dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
                         break;
                         case 'F':
@@ -87,8 +86,6 @@ class ConvertExcel
             $row++;
 
         }while ($found);
-
-
 
 
         $inter = 0;

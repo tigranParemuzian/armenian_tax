@@ -86,7 +86,7 @@ class IdramInfoAdmin extends Admin
             ->add('const')
             ->add('parentCost')
             ->add('number')
-            ->add('dueDate', 'doctrine_orm_datetime_range', array('label'=>'admin.labels.payment_date'), 'sonata_type_datetime_range_picker',
+            ->add('dueDate', 'doctrine_orm_datetime_range', array(), 'sonata_type_datetime_range_picker',
                 array('field_options_start' => array('format' => 'yyyy-MM-dd HH:mm:ss'),
                     'field_options_end' => array('format' => 'yyyy-MM-dd HH:mm:ss'))
             )

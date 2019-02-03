@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940ff000-0819-4d04-bd93-f2b1892d3903" name="Default" comment="" />
+    <list default="true" id="940ff000-0819-4d04-bd93-f2b1892d3903" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
       <usages-collector id="statistics.php.new.class" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1313" />
+          <entry key="PHP" value="1432" />
           <entry key="Twig" value="76" />
           <entry key="YAML" value="66" />
         </counts>
@@ -101,7 +105,7 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1313" />
+          <entry key="php" value="1432" />
           <entry key="twig" value="76" />
           <entry key="yml" value="66" />
         </counts>
@@ -113,22 +117,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="690">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="e#38#71#0#PHP" expanded="true" />
-                <element signature="e#2914#2935#1#PHP" expanded="true" />
-                <element signature="e#3274#3297#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/IdramInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -151,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="88" column="66" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -163,25 +165,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="278" column="79" selection-start-line="278" selection-start-column="79" selection-end-line="278" selection-end-column="79" />
+            <state relative-caret-position="366">
+              <caret line="282" column="51" selection-start-line="282" selection-start-column="51" selection-end-line="282" selection-end-column="51" />
               <folding>
                 <element signature="e#9863#9879#1#PHP" expanded="true" />
                 <element signature="e#12248#12272#1#PHP" expanded="true" />
                 <element signature="e#11480#11507#1#PHP" expanded="true" />
-                <marker date="1549231525004" expanded="true" signature="17210:18415" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="18988:19342" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="19023:19307" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="19387:19589" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="19630:19798" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="19839:20048" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="20301:21058" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="21207:21777" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="21249:21732" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="21844:23452" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="23609:24230" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="24263:25107" ph="..." />
-                <marker date="1549231525004" expanded="true" signature="25143:25846" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="17331:18536" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="19109:19463" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="19144:19428" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="19508:19710" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="19751:19919" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="19960:20169" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="20422:21179" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="21328:21898" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="21370:21853" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="21965:23573" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="23730:24351" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="24384:25228" ph="..." />
+                <marker date="1549233492956" expanded="true" signature="25264:25967" ph="..." />
               </folding>
             </state>
           </provider>
@@ -289,10 +291,10 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Form/app_bundle_upload_idram.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/UploadIdramType.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/IdramInfo.php" />
-        <option value="$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/IdramGroups.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php" />
       </list>
     </option>
@@ -652,12 +654,12 @@
       <workItem from="1537950733282" duration="799000" />
       <workItem from="1548862112836" duration="11000" />
       <workItem from="1548862992904" duration="603000" />
-      <workItem from="1549218585580" duration="8177000" />
+      <workItem from="1549218585580" duration="9226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64573000" />
+    <option name="totallyTimeSpent" value="65622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="1012" extended-state="6" />
@@ -985,50 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="278" column="79" selection-start-line="278" selection-start-column="79" selection-end-line="278" selection-end-column="79" />
-          <folding>
-            <element signature="e#9863#9879#1#PHP" expanded="true" />
-            <element signature="e#12248#12272#1#PHP" expanded="true" />
-            <element signature="e#11480#11507#1#PHP" expanded="true" />
-            <marker date="1549231525004" expanded="true" signature="17210:18415" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="18988:19342" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="19023:19307" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="19387:19589" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="19630:19798" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="19839:20048" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="20301:21058" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="21207:21777" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="21249:21732" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="21844:23452" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="23609:24230" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="24263:25107" ph="..." />
-            <marker date="1549231525004" expanded="true" signature="25143:25846" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="e#38#71#0#PHP" expanded="true" />
-            <element signature="e#2914#2935#1#PHP" expanded="true" />
-            <element signature="e#3274#3297#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/IdramGroups.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -1038,8 +996,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/IdramInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="19" />
+        <state relative-caret-position="234">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#38#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="282" column="51" selection-start-line="282" selection-start-column="51" selection-end-line="282" selection-end-column="51" />
+          <folding>
+            <element signature="e#9863#9879#1#PHP" expanded="true" />
+            <element signature="e#12248#12272#1#PHP" expanded="true" />
+            <element signature="e#11480#11507#1#PHP" expanded="true" />
+            <marker date="1549233492956" expanded="true" signature="17331:18536" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="19109:19463" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="19144:19428" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="19508:19710" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="19751:19919" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="19960:20169" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="20422:21179" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="21328:21898" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="21370:21853" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="21965:23573" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="23730:24351" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="24384:25228" ph="..." />
+            <marker date="1549233492956" expanded="true" signature="25264:25967" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="88" column="66" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="66" />
         </state>
       </provider>
     </entry>
