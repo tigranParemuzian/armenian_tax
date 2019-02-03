@@ -68,6 +68,10 @@ class ConvertExcel
 
                             $dates[$row][$cole] = (string)$dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
                         break;
+                        case 'E':
+
+                            $dates[$row][$cole] = (string)$dataExcel->getActiveSheet()->getCell($key . $row)->getValue();
+                        break;
                         case 'F':
                             $dates[$row][$cole] = new \DateTime($dataExcel->getActiveSheet()->getCell($key . $row)->getValue());
                             break;
