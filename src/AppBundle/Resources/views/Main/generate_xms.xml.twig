@@ -21,7 +21,12 @@
     <ctyExporterDsc>Թայվան</ctyExporterDsc>
     <ctyExporterDscRus>Тайвань (в составе Китая)</ctyExporterDscRus>
     <ctyExporterDscEng>Taiwan, Republic of China </ctyExporterDscEng>
-    <exporterName>KYE SYSIEMS CORP.</exporterName>
+    {% if data|length >0 %}
+        <exporterName>{{ data[0].companyFrom }}</exporterName>
+
+    {% else %}
+        <exporterName>KYE SYSIEMS CORP.</exporterName>
+    {% endif %}
     <exporterAddress>No.492, Sec.5, Chongxin Rd</exporterAddress>
     <declarantName>ARMEN</declarantName>
     <declarantSurname>MKRTCHYAN</declarantSurname>
