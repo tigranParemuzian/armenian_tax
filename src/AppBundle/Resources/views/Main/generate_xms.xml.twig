@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rfel>
+    <lastUpdateMillis>1540559486893</lastUpdateMillis>
+    <genCtyExporterCode>CN</genCtyExporterCode>
+    <genCtyExporterDsc>Չինաստան</genCtyExporterDsc>
+    <genCtyExporterDscRus>Китайская Народная Республика</genCtyExporterDscRus>
+    <genCtyExporterDscEng>China</genCtyExporterDscEng>
+    <genCtyOriginDsc>Չինաստան</genCtyOriginDsc>
+    <genCtyOriginDscRus>Китайская Народная Республика</genCtyOriginDscRus>
+    <genCtyOriginDscEng>China</genCtyOriginDscEng>
+    <genCurrencyCode>USD</genCurrencyCode>
+    <genCurrencyDsc>ԱՄՆ դոլար</genCurrencyDsc>
+    <genCurrencyDscRus>Доллары США</genCurrencyDscRus>
+    <genCurrencyDscEng>United States Dollar</genCurrencyDscEng>
+    <rateDate>2018-10-26</rateDate>
+    <importerType>I</importerType>
+    <importerTin>06938022</importerTin>
+    <importerName>«Վանարմկոմպ» ՍՊԸ</importerName>
+    <importerAddress>Կնունյանց փող. թիվ 43</importerAddress>
+    <ctyExporterCode>TW</ctyExporterCode>
+    <ctyExporterDsc>Թայվան</ctyExporterDsc>
+    <ctyExporterDscRus>Тайвань (в составе Китая)</ctyExporterDscRus>
+    <ctyExporterDscEng>Taiwan, Republic of China </ctyExporterDscEng>
+    <exporterName>KYE SYSIEMS CORP.</exporterName>
+    <exporterAddress>No.492, Sec.5, Chongxin Rd</exporterAddress>
+    <declarantName>ARMEN</declarantName>
+    <declarantSurname>MKRTCHYAN</declarantSurname>
+    <declarantTel>+374 (093)756055</declarantTel>
+    <declarantMail>vanadzor@vanadzor.org</declarantMail>
+    <filledPerson>06938022</filledPerson>
+    <isAuditedInstance>false</isAuditedInstance>
+    <verifyRequested>false</verifyRequested>
+    {% for data in data %}
+    <item>
+        <tariffCode>{{ data.code ? data.code : '' }}</tariffCode>
+        <tariffAddDsc>{{ data.name ? data.name : '' }}</tariffAddDsc>
+        <ctyOriginCode>{{ data.countryCode ? data.countryCode : '' }}</ctyOriginCode>
+        <quantity>{{ data.count ? data.count : 0 }}</quantity>
+        <cost>{{ data.price ? data.price : 0 }}</cost>
+    </item>
+    {% endfor %}
+</rfel>

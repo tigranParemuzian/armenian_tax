@@ -78,6 +78,7 @@ class MainController extends Controller
                 $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files';
                 //get corrent user
                 $now = new \DateTime('now');
+
                 // check isset file, file type is xls
                 if (is_file($file) && in_array($file->getMimeType(), $xlsTypes))
                 {
@@ -96,6 +97,7 @@ class MainController extends Controller
 
                         $xml = new \SimpleXMLElement($fileContents);
 
+//                        dump($xml); exit;
                         $reference = new Reference();
                         $reference->setUser($this->getUser());
                         $reference->setCode($now->getTimestamp().$this->getUser()->getId());
@@ -312,39 +314,39 @@ class MainController extends Controller
         return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));
     }
 
-    /**
-     * @Route("/location/{lat}/long/{log}", name="reference-list")
-     * @param Request $request
-     * @return Response
-     * @Security("has_role('ROLE_USER')")
-     */
-    public function locationAction(Request $request, $lat, $log){
-
-        $em = $this->getDoctrine()->getManager();
-
-        $location = new Locations();
-        $location->setLat($lat);
-        $location->setLog($log);
-
-        $em->persist($location);
-        $em->flush();
-
-        return new JsonResponse('Tk', Response::HTTP_OK);
-
-        /*$reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
-
-
-        if (!$reference){
-            $this->addFlash(
-                'error',
-                'Reference not found.'
-            );
-
-            return $this->redirectToRoute('create-reference');
-        }
-
-        return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));*/
-    }
+//    /**
+//     * @Route("/location/{lat}/long/{log}", name="reference-list")
+//     * @param Request $request
+//     * @return Response
+//     * @Security("has_role('ROLE_USER')")
+//     */
+//    public function locationAction(Request $request, $lat, $log){
+//
+//        $em = $this->getDoctrine()->getManager();
+//
+//        $location = new Locations();
+//        $location->setLat($lat);
+//        $location->setLog($log);
+//
+//        $em->persist($location);
+//        $em->flush();
+//
+//        return new JsonResponse('Tk', Response::HTTP_OK);
+//
+//        /*$reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
+//
+//
+//        if (!$reference){
+//            $this->addFlash(
+//                'error',
+//                'Reference not found.'
+//            );
+//
+//            return $this->redirectToRoute('create-reference');
+//        }
+//
+//        return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));*/
+//    }
 
 
     /**
@@ -385,6 +387,37 @@ class MainController extends Controller
         $response->setContent(file_get_contents($file));
 
         return $response;
+
+
+    }
+
+    /**
+     *
+     * @Route("/reference/generate-xml/{referenceId}", name="reference-generate-xml", defaults={"_format"="xml"})
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     * @Template()
+     *
+     * @param Request $request
+     * @param $referenceId
+     */
+    public function generateXmlAction(Request $request, $referenceId){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $data = $em->getRepository('AppBundle:ReferenceItem')->findByReference((int)$referenceId);
+
+        if(!$data){
+            $this->addFlash(
+                'error',
+                'Reference Items not found.'
+            );
+
+            return $this->redirectToRoute('reference-list');
+        }
+
+        return  $this->render('@App/Main/generate_xms.xml.twig', array('data'=>$data));
 
 
     }
@@ -434,6 +467,7 @@ class MainController extends Controller
     private function xlsTypes()
     {
         $xlsTypes = array('application/xml',
+            'text/xml',
             'applic ation/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
             'application/vnd.ms-office',
             'application/vnd.ms-excel');
