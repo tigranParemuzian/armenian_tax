@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940ff000-0819-4d04-bd93-f2b1892d3903" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +76,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="15" />
+          <entry key="php" value="16" />
           <entry key="twig" value="6" />
           <entry key="yml" value="4" />
         </counts>
@@ -90,15 +88,15 @@
       <usages-collector id="statistics.php.new.class" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1573" />
-          <entry key="Twig" value="115" />
+          <entry key="PHP" value="1579" />
+          <entry key="Twig" value="175" />
           <entry key="YAML" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="15" />
+          <entry key="PHP" value="16" />
           <entry key="Twig" value="6" />
           <entry key="YAML" value="4" />
         </counts>
@@ -106,8 +104,8 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1573" />
-          <entry key="twig" value="115" />
+          <entry key="php" value="1579" />
+          <entry key="twig" value="175" />
           <entry key="yml" value="74" />
         </counts>
       </usages-collector>
@@ -115,15 +113,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,27 +149,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="432" column="84" selection-start-line="432" selection-start-column="84" selection-end-line="432" selection-end-column="84" />
+            <state relative-caret-position="365">
+              <caret line="302" selection-start-line="302" selection-end-line="302" />
               <folding>
+                <element signature="e#12712#12733#1#PHP" expanded="true" />
                 <element signature="e#12954#12972#1#PHP" expanded="true" />
                 <element signature="e#13015#13051#0#PHP" expanded="true" />
                 <element signature="e#15856#15881#1#PHP" expanded="true" />
                 <element signature="e#16098#16114#1#PHP" expanded="true" />
-                <marker date="1549992331723" expanded="true" signature="18760:19965" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="20538:20892" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="20573:20857" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="20937:21139" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="21180:21348" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="21389:21598" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="21851:22608" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="22757:23327" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="22799:23282" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="23394:25002" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="25159:25780" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="25813:26657" ph="..." />
-                <marker date="1549992331723" expanded="true" signature="26693:27396" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="18190:19395" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="19968:20322" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="20003:20287" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="20367:20569" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="20610:20778" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="20819:21028" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="21281:22038" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="22187:22757" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="22229:22712" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="22824:24432" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="24589:25210" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="25243:26087" ph="..." />
+                <marker date="1549992483116" expanded="true" signature="26123:26826" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -188,8 +187,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="306">
+              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -197,8 +196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="288">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="26" selection-end-column="28" />
               <folding>
                 <element signature="e#1908#1932#0#Twig" expanded="true" />
                 <element signature="e#2147#2171#0#Twig" expanded="true" />
@@ -689,19 +688,19 @@
       <workItem from="1548862112836" duration="11000" />
       <workItem from="1548862992904" duration="603000" />
       <workItem from="1549218585580" duration="12394000" />
-      <workItem from="1549991190248" duration="1141000" />
+      <workItem from="1549991190248" duration="1753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69931000" />
+    <option name="totallyTimeSpent" value="70543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1039" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19423692" />
-      <window_info id="Structure" order="1" weight="0.24919957" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19423692" />
+      <window_info active="true" id="Structure" order="1" visible="true" weight="0.24919957" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972136" />
@@ -730,13 +729,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/uploads/files/Test/datacusad-6685.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/uploads/files/dts-2228.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1047,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="288">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="e#1908#1932#0#Twig" expanded="true" />
             <element signature="e#2147#2171#0#Twig" expanded="true" />
@@ -1057,36 +1049,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="432" column="84" selection-start-line="432" selection-start-column="84" selection-end-line="432" selection-end-column="84" />
+        <state relative-caret-position="365">
+          <caret line="302" selection-start-line="302" selection-end-line="302" />
           <folding>
+            <element signature="e#12712#12733#1#PHP" expanded="true" />
             <element signature="e#12954#12972#1#PHP" expanded="true" />
             <element signature="e#13015#13051#0#PHP" expanded="true" />
             <element signature="e#15856#15881#1#PHP" expanded="true" />
             <element signature="e#16098#16114#1#PHP" expanded="true" />
-            <marker date="1549992331723" expanded="true" signature="18760:19965" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="20538:20892" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="20573:20857" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="20937:21139" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="21180:21348" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="21389:21598" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="21851:22608" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="22757:23327" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="22799:23282" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="23394:25002" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="25159:25780" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="25813:26657" ph="..." />
-            <marker date="1549992331723" expanded="true" signature="26693:27396" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="18190:19395" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="19968:20322" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="20003:20287" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="20367:20569" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="20610:20778" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="20819:21028" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="21281:22038" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="22187:22757" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="22229:22712" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="22824:24432" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="24589:25210" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="25243:26087" ph="..." />
+            <marker date="1549992483116" expanded="true" signature="26123:26826" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="306">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
         </state>
       </provider>
     </entry>
