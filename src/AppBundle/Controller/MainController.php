@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\AttachedDocument;
 use AppBundle\Entity\Booking;
+use AppBundle\Entity\ConnectionCodes;
 use AppBundle\Entity\Footer;
 use AppBundle\Entity\Header;
 use AppBundle\Entity\Item;
@@ -11,6 +12,7 @@ use AppBundle\Entity\Locations;
 use AppBundle\Entity\Reference;
 use AppBundle\Entity\ReferenceItem;
 use AppBundle\Entity\Tarification;
+use AppBundle\Form\ConnectionCodesType;
 use AppBundle\Form\UploadIdramType;
 use AppBundle\Form\UploadXmlType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
@@ -299,7 +301,13 @@ class MainController extends Controller
 
         $em = $this->getDoctrine()->getManager();
 
-        $reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
+        if($this->isGranted('ROLE_SUPER_ADMIN' == false)) {
+            $reference = $em->getRepository('AppBundle:Reference')->findByUsers($this->getUser()->getId());
+
+        }else {
+            $reference = $em->getRepository('AppBundle:Reference')->findBy(array(), array('created'=>'DESC'));
+
+        }
 
 
         if (!$reference){
@@ -314,6 +322,135 @@ class MainController extends Controller
         return $this->render('AppBundle:Main:reference.html.twig', array('data'=>$reference));
     }
 
+
+    /**
+     * @Route("/reference/delete/{id}", name="reference_delete")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     */
+    public function deleteReferenceAction(Request $request, $id){
+        $em = $this->getDoctrine()->getManager();
+
+        $code = $em->getRepository('AppBundle:Reference')->find($id);
+
+        if(!$code)
+        {
+            $this->addFlash(
+                'error',
+                'Code not found.'
+            );
+
+            return $this->redirectToRoute('reference-list');
+        }
+
+        $em->remove($code);
+        try {
+            $em->flush();
+        }catch (\Exception $exception) {
+            $this->addFlash(
+                'error',
+                'Code not found.'
+            );
+
+            return $this->redirectToRoute('reference-list');
+        }
+
+        return $this->redirectToRoute('reference-list');
+
+    }
+
+    /**
+     * @Route("/connection/codes", name="connection_codes")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     */
+    public function connectionCodesAction(Request $request){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $codes = $em->getRepository('AppBundle:ConnectionCodes')->findAll();
+
+        $code = new ConnectionCodes();
+        $form = $this->createForm(new ConnectionCodesType(), $code);
+
+
+        if($request->isMethod('POST')) {
+
+            // get request & check
+            $form->handleRequest($request);
+            //check form validation
+            if ($form->isValid()) {
+
+                $data = $form->getData();
+
+                $em->persist($data);
+
+                $em->flush();
+
+                $this->addFlash(
+                    'success',
+                    'Added apres du'
+                );
+
+                return $this->redirectToRoute('connection_codes');
+            }
+        }
+
+        $reference = $em->getRepository('AppBundle:Reference')->findByUser($this->getUser()->getId());
+
+
+        if (!$reference){
+            $this->addFlash(
+                'error',
+                'Reference not found.'
+            );
+
+            return $this->redirectToRoute('create-reference');
+        }
+
+        return $this->render('@App/Main/connection_codes.html.twig', array('form'=>$form->createView(),
+            'codes'=>$codes));
+    }
+
+
+    /**
+     * @Route("/connection/delate/{id}", name="connection_delate")
+     * @param Request $request
+     * @return Response
+     * @Security("has_role('ROLE_USER')")
+     */
+    public function deleteCodesAction(Request $request, $id){
+        $em = $this->getDoctrine()->getManager();
+
+        $code = $em->getRepository('AppBundle:ConnectionCodes')->find($id);
+
+        if(!$code)
+        {
+            $this->addFlash(
+                'error',
+                'Code not found.'
+            );
+
+            return $this->redirectToRoute('connection_codes');
+        }
+
+        $em->remove($code);
+        try {
+            $em->flush();
+        }catch (\Exception $exception) {
+            $this->addFlash(
+                'error',
+                'Code not found.'
+            );
+
+            return $this->redirectToRoute('connection_codes');
+        }
+
+        return $this->redirectToRoute('connection_codes');
+
+    }
 //    /**
 //     * @Route("/location/{lat}/long/{log}", name="reference-list")
 //     * @param Request $request
@@ -406,7 +543,9 @@ class MainController extends Controller
 
         $em = $this->getDoctrine()->getManager();
 
-        $data = $em->getRepository('AppBundle:ReferenceItem')->findByReference((int)$referenceId);
+        $codes = $em->getRepository('AppBundle:ConnectionCodes')->findActual();
+
+        $data = $em->getRepository('AppBundle:ReferenceItem')->findExportData((int)$referenceId, $codes);
 
         if(!$data){
             $this->addFlash(

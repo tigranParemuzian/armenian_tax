@@ -11,4 +11,31 @@ namespace AppBundle\Repository;
 class ReferenceItemRepository extends \Doctrine\ORM\EntityRepository
 {
 
+    public function findExportData($refId , array $codes) {
+
+        $q = $this->getEntityManager()
+            ->createQueryBuilder()
+            ->select('ri')
+            ->from('AppBundle:ReferenceItem', 'ri')
+            ->leftJoin('ri.reference', 'r')->addSelect('r')
+            ->where('r.id = :rId')
+            ->orderBy('ri.code')
+
+            ->setParameter('rId', $refId)
+
+            ;
+
+        $params = '';
+        foreach ($codes as $key=>$code) {
+            $key == 0 ? $params = "(ri.code LIKE :pr{$key})" : $params.="OR (ri.code LIKE :pr{$key})";
+            $q
+            ->setParameter("pr{$key}", $code['code'].'%' )
+            ;
+
+        }
+
+        $q->andWhere($params);
+
+        return $q->getQuery()->getResult();
+    }
 }

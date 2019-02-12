@@ -10,4 +10,19 @@ namespace AppBundle\Repository;
  */
 class ReferenceRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function findByUsers($useId) {
+
+        return $this->getEntityManager()
+            ->createQueryBuilder()
+            ->select('r')
+            ->from('AppBundle:Reference', 'r')
+            ->leftJoin('r.user', 'u')
+            ->where('u.id = :uId')
+            ->orderBy('r.created', 'DESC')
+            ->setParameter('uId', $useId)
+            ->getQuery()->getResult()
+
+            ;
+    }
 }

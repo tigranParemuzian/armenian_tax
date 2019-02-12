@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940ff000-0819-4d04-bd93-f2b1892d3903" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceItemRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceItemRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,54 +19,27 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="armen_tax@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="armen_tax@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="armen_tax" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="armen_tax@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="armen_tax" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="reference_item" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="armen_tax@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="armen_tax@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="armen_tax: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-217611311">
@@ -76,9 +53,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="16" />
-          <entry key="twig" value="6" />
-          <entry key="yml" value="4" />
+          <entry key="php" value="23" />
+          <entry key="reference_item" value="1" />
+          <entry key="twig" value="16" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.rename.constructor" />
@@ -88,24 +66,25 @@
       <usages-collector id="statistics.php.new.class" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1579" />
-          <entry key="Twig" value="183" />
+          <entry key="PHP" value="2657" />
+          <entry key="Twig" value="287" />
           <entry key="YAML" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="16" />
-          <entry key="Twig" value="6" />
-          <entry key="YAML" value="4" />
+          <entry key="Database Element" value="1" />
+          <entry key="PHP" value="23" />
+          <entry key="Twig" value="16" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1579" />
-          <entry key="twig" value="183" />
+          <entry key="php" value="2657" />
+          <entry key="twig" value="287" />
           <entry key="yml" value="74" />
         </counts>
       </usages-collector>
@@ -113,64 +92,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-              <folding>
-                <element signature="e#2539#2555#0#Twig" expanded="true" />
-                <element signature="e#4982#5004#0#Twig" expanded="true" />
-                <element signature="e#5136#5149#0#Twig" expanded="true" />
-                <element signature="e#5340#5364#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="302" selection-start-line="302" selection-end-line="302" />
+            <state relative-caret-position="485">
+              <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
               <folding>
-                <element signature="e#12712#12733#1#PHP" expanded="true" />
-                <element signature="e#12954#12972#1#PHP" expanded="true" />
-                <element signature="e#13015#13051#0#PHP" expanded="true" />
-                <element signature="e#15856#15881#1#PHP" expanded="true" />
-                <element signature="e#16098#16114#1#PHP" expanded="true" />
-                <marker date="1549992483116" expanded="true" signature="18190:19395" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="19968:20322" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="20003:20287" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="20367:20569" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="20610:20778" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="20819:21028" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="21281:22038" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="22187:22757" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="22229:22712" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="22824:24432" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="24589:25210" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="25243:26087" ph="..." />
-                <marker date="1549992483116" expanded="true" signature="26123:26826" ph="..." />
+                <element signature="e#12895#12916#1#PHP" expanded="true" />
+                <element signature="e#13044#13065#1#PHP" expanded="true" />
+                <element signature="e#13534#13561#1#PHP" expanded="true" />
+                <element signature="e#14159#14177#1#PHP" expanded="true" />
+                <element signature="e#18348#18375#1#PHP" expanded="true" />
+                <element signature="e#18436#18461#1#PHP" expanded="true" />
+                <marker date="1549996785336" expanded="true" signature="20941:22146" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="22719:23073" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="22754:23038" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="23118:23320" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="23361:23529" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="23570:23779" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="24032:24789" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="24938:25508" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="24980:25463" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="25575:27183" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="27340:27961" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="27994:28838" ph="..." />
+                <marker date="1549996785336" expanded="true" signature="28874:29577" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -178,61 +134,88 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="234">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
               <folding>
-                <element signature="e#1908#1932#0#Twig" expanded="true" />
-                <element signature="e#2147#2171#0#Twig" expanded="true" />
-                <element signature="e#2388#2410#0#Twig" expanded="true" />
+                <element signature="e#416#437#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UploadXmlType.php">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ConnectionCodesRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UploadIdramType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="47" selection-start-line="15" selection-start-column="12" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="324">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
-                <element signature="e#34#74#0#PHP" expanded="true" />
+                <element signature="e#421#448#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Form/app_bundle_upload_idram.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ReferenceItem.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceItemRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="e#432#457#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/statistic.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="e#12#28#0#Twig" expanded="true" />
+                <element signature="e#365#383#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/testCrawlerCriteria.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Upload/upload_file.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#12#28#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/add_page_form.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -293,8 +276,6 @@
         <option value="$PROJECT_DIR$/src/ShopBundle/Entity/InvoiceItem.php" />
         <option value="$PROJECT_DIR$/src/ShopBundle/Controller/MaxainController.php" />
         <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/Maxain/show_single.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceItemRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Reference.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/list.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ReferenceItem.php" />
@@ -313,10 +294,15 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/IdramInfoAdmin.php" />
         <option value="$PROJECT_DIR$/src/ShopBundle/Services/ConvertExcel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/ConnectionCodesType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Main/connection_codes.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ConnectionCodesRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceItemRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" />
       </list>
     </option>
   </component>
@@ -536,6 +522,15 @@
               <item name="armenian_tax" type="b2602c69:ProjectViewProjectNode" />
               <item name="armenian_tax" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="armenian_tax" type="b2602c69:ProjectViewProjectNode" />
+              <item name="armenian_tax" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ShopBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -623,9 +618,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="conf&#9;FILE&#9;file:///var/www/html/armenian_tax/app/config/config.yml" />
+    <property name="SearchEverywhereHistoryKey" value="sec&#9;FILE&#9;file:///var/www/html/armenian_tax/app/config/security.yml&#10;conf&#9;FILE&#9;file:///var/www/html/armenian_tax/app/config/config.yml" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -688,20 +684,21 @@
       <workItem from="1548862112836" duration="11000" />
       <workItem from="1548862992904" duration="603000" />
       <workItem from="1549218585580" duration="12394000" />
-      <workItem from="1549991190248" duration="2155000" />
+      <workItem from="1549991190248" duration="5593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70945000" />
+    <option name="totallyTimeSpent" value="74383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1039" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19423692" />
-      <window_info active="true" id="Structure" order="1" visible="true" weight="0.24919957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19423692" />
+      <window_info id="Structure" order="1" weight="0.24919957" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32893288" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972136" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -719,7 +716,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="right" id="Remote Host" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32988048" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32977587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,81 +726,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/uploads/files/dts-2228.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/files/datavan.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/files/datatax.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/files/data1nax.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/files/1nax.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../capital-drugwh/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="180" lean-forward="true" selection-start-line="175" selection-start-column="12" selection-end-line="180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/liuggio/ExcelBundle/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpexcel/Classes/PHPExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="478" column="44" selection-start-line="478" selection-start-column="32" selection-end-line="478" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="1478" column="48" selection-start-line="1478" selection-start-column="22" selection-end-line="1478" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../one_armenia/src/AppBundle/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="350" column="29" selection-start-line="340" selection-start-column="12" selection-end-line="350" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/APYDataGridBundle/views/blocks.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="170" column="24" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/c33841d2/0e784770-fba6-471a-8c25-1a24df91cf1d/armen_tax.reference" />
     <entry file="file://$PROJECT_DIR$/src/ShopBundle/ShopBundle.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -831,13 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ReferenceItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -911,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/IdramGroupsAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -930,16 +838,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/InvoiceImportType.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/idram.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1010,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Controller/CoreController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1024,24 +915,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://0e784770-fba6-471a-8c25-1a24df91cf1d/schema/armen_tax/table/reference_item">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ConnectionCodes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ConnectionCodesType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/connection_codes.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#1511#1528#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="195">
+          <caret line="94" column="57" lean-forward="true" selection-start-line="94" selection-start-column="57" selection-end-line="94" selection-end-column="57" />
           <folding>
             <element signature="e#2539#2555#0#Twig" expanded="true" />
+            <element signature="e#2676#2690#0#Twig" expanded="true" />
+            <element signature="e#2809#2825#0#Twig" expanded="true" />
             <element signature="e#4982#5004#0#Twig" expanded="true" />
             <element signature="e#5136#5149#0#Twig" expanded="true" />
-            <element signature="e#5340#5364#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/gnum.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/idram.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/reference.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="702">
+          <caret line="54" column="24" selection-start-line="7" selection-start-column="16" selection-end-line="54" selection-end-column="24" />
           <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
             <element signature="e#1908#1932#0#Twig" expanded="true" />
             <element signature="e#2147#2171#0#Twig" expanded="true" />
             <element signature="e#2388#2410#0#Twig" expanded="true" />
@@ -1049,44 +1016,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/testCrawlerCriteria.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Upload/upload_file.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/add_page_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ReferenceItem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ConnectionCodesRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#421#448#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceItemRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#432#457#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/statistic.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+            <element signature="e#365#383#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ReferenceRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="e#416#437#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="302" selection-start-line="302" selection-end-line="302" />
+        <state relative-caret-position="485">
+          <caret line="308" lean-forward="true" selection-start-line="308" selection-end-line="308" />
           <folding>
-            <element signature="e#12712#12733#1#PHP" expanded="true" />
-            <element signature="e#12954#12972#1#PHP" expanded="true" />
-            <element signature="e#13015#13051#0#PHP" expanded="true" />
-            <element signature="e#15856#15881#1#PHP" expanded="true" />
-            <element signature="e#16098#16114#1#PHP" expanded="true" />
-            <marker date="1549992483116" expanded="true" signature="18190:19395" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="19968:20322" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="20003:20287" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="20367:20569" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="20610:20778" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="20819:21028" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="21281:22038" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="22187:22757" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="22229:22712" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="22824:24432" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="24589:25210" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="25243:26087" ph="..." />
-            <marker date="1549992483116" expanded="true" signature="26123:26826" ph="..." />
+            <element signature="e#12895#12916#1#PHP" expanded="true" />
+            <element signature="e#13044#13065#1#PHP" expanded="true" />
+            <element signature="e#13534#13561#1#PHP" expanded="true" />
+            <element signature="e#14159#14177#1#PHP" expanded="true" />
+            <element signature="e#18348#18375#1#PHP" expanded="true" />
+            <element signature="e#18436#18461#1#PHP" expanded="true" />
+            <marker date="1549996785336" expanded="true" signature="20941:22146" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="22719:23073" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="22754:23038" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="23118:23320" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="23361:23529" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="23570:23779" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="24032:24789" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="24938:25508" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="24980:25463" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="25575:27183" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="27340:27961" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="27994:28838" ph="..." />
+            <marker date="1549996785336" expanded="true" signature="28874:29577" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
         </state>
       </provider>
     </entry>

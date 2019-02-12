@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">Կապի կոդեր</div>
+
+                <div class="panel-footer">
+                    {{ form_start(form) }}
+                    {{ form_errors(form) }}
+                    {{ form_widget(form) }}
+                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Select All
+                                </label>
+                            </div>
+                        </th>
+                        <th>Կոդեր</th>
+
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for booking in codes %}
+                        <tr>
+                            <th scope="row">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">{{ booking.id }}
+                                    </label>
+                                </div></th>
+                            <td>{{ booking.code }}</td>
+                            <td>
+                                <a href="{{ path('connection_delate', {'id':booking.id}) }}" type="button" class="btn btn-info">
+                                    Ջնջել
+                                </a>
+
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
