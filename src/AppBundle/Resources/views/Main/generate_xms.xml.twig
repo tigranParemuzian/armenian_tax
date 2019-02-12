@@ -35,7 +35,7 @@
         <tariffCode>{{ data.code ? data.code : '' }}</tariffCode>
         <tariffAddDsc>{{ data.name ? data.name : '' }}</tariffAddDsc>
         <ctyOriginCode>{{ data.countryCode ? data.countryCode : '' }}</ctyOriginCode>
-        <quantity>{{ data.count ? data.count : 0 }}</quantity>
+        <quantity>{{ data.count ? data.count|number_format(0, '', '') : 0 }}</quantity>
         <cost>{{ data.price ? data.price|number_format(0, '', '') : 0 }}</cost>
     </item>
     {% endfor %}

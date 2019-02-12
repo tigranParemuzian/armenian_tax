@@ -89,7 +89,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="1579" />
-          <entry key="Twig" value="175" />
+          <entry key="Twig" value="183" />
           <entry key="YAML" value="74" />
         </counts>
       </usages-collector>
@@ -105,7 +105,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="php" value="1579" />
-          <entry key="twig" value="175" />
+          <entry key="twig" value="183" />
           <entry key="yml" value="74" />
         </counts>
       </usages-collector>
@@ -187,8 +187,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="666">
+              <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -688,12 +688,12 @@
       <workItem from="1548862112836" duration="11000" />
       <workItem from="1548862992904" duration="603000" />
       <workItem from="1549218585580" duration="12394000" />
-      <workItem from="1549991190248" duration="1753000" />
+      <workItem from="1549991190248" duration="2155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70543000" />
+    <option name="totallyTimeSpent" value="70945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1039" extended-state="6" />
@@ -1085,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Main/generate_xms.xml.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="666">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
         </state>
       </provider>
     </entry>
