@@ -15,10 +15,9 @@ class ReferenceItemRepository extends \Doctrine\ORM\EntityRepository
 
         $q = $this->getEntityManager()
             ->createQueryBuilder()
-            ->select('ri')
+            ->select('DISTINCT ri')
             ->from('AppBundle:ReferenceItem', 'ri')
-            ->leftJoin('ri.reference', 'r')->addSelect('r')
-            ->where('r.id = :rId')
+            ->innerJoin('ri.reference', 'r', 'WITH', 'r.id = :rId')
             ->orderBy('ri.code')
 
             ->setParameter('rId', $refId)

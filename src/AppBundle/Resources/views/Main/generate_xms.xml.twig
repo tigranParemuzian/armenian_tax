@@ -35,13 +35,13 @@
     <filledPerson>06938022</filledPerson>
     <isAuditedInstance>false</isAuditedInstance>
     <verifyRequested>false</verifyRequested>
-    {% for data in data %}
+    {% for dat in data %}
     <item>
-        <tariffCode>{{ data.code ? data.code : '' }}</tariffCode>
-        <tariffAddDsc>{{ data.name ? data.name : '' }}</tariffAddDsc>
-        <ctyOriginCode>{{ data.countryCode ? data.countryCode : '' }}</ctyOriginCode>
-        <quantity>{{ data.count ? data.count|number_format(0, '', '') : 0 }}</quantity>
-        <cost>{{ data.price ? data.price|number_format(0, '', '') : 0 }}</cost>
+        <tariffCode>{{ dat.code ? dat.code : '' }}</tariffCode>
+        <tariffAddDsc>{{ dat.name ? dat.name : '' }}</tariffAddDsc>
+        <ctyOriginCode>{{ dat.countryCode ? dat.countryCode : '' }}</ctyOriginCode>
+        <quantity>{{ dat.count ? dat.count|number_format(0, '', '') : 0 }}</quantity>
+        <cost>{{ dat.price ? dat.price|number_format(0, '', '') : 0 }}</cost>
     </item>
     {% endfor %}
 </rfel>
