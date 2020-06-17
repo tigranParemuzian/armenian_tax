@@ -334,13 +334,13 @@ class ConvertExcel
                     (int)$item->getUnitCode() == 796 ? $cnt = $item->getCount() : $cnt = ' ';
                 $phpExcelObject->setActiveSheetIndex(0)
                     ->setCellValue('A'.$j, "$i")
-                    ->setCellValue('B'.$j, "{$item->getName()}")
-                    ->setCellValue('C'.$j, "{$item->getPakageQuantity()}")
-                    ->setCellValue('D'.$j, "{$item->getBrutto()}")
-                    ->setCellValue('E'.$j, "{$item->getNetto()}")
+                    ->setCellValue('B'.$j, "{$this->strEncode($item->getName())}")
+                    ->setCellValue('C'.$j, "{$this->strEncode($item->getPakageQuantity())}")
+                    ->setCellValue('D'.$j, "{$this->strEncode($item->getBrutto())}")
+                    ->setCellValue('E'.$j, "{$this->strEncode($item->getNetto())}")
                     ->setCellValue('F'.$j, "{$cnt}")
-                    ->setCellValue('G'.$j, "{$item->getPrice()}")
-                    ->setCellValue('H'.$j, "{$item->getCountryName()}")
+                    ->setCellValue('G'.$j, "{$this->strEncode($item->getPrice())}")
+                    ->setCellValue('H'.$j, "{$this->strEncode($item->getCountryName())}")
                 ;
                 break;
             case 2:
@@ -449,5 +449,10 @@ class ConvertExcel
             'application/vnd.ms-excel');
 
         return $xlsTypes;
+    }
+
+    private function strEncode(string $string) {
+
+        return mb_strtolower($string, 'UTF-8');
     }
 }
