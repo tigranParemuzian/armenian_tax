@@ -256,8 +256,10 @@ class ConvertExcel
                 break;
         }
 
+        $now = new \DateTime('now');
+
         $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files/'.$data[0]->getReference()->getUser()->getUsername().'/';
-        $fileName = $this->strEncode(str_replace(' ', '_',$title).'_'. $data[0]->getCompanyFrom() .'_'.$data[0]->getReference()->getCode().'.xls');
+        $fileName = $now->getTimestamp().'.xls';
 
         $file = $brochuresDir.$fileName;
 
@@ -390,11 +392,11 @@ class ConvertExcel
             $phpExcelObject->setActiveSheetIndex(0)
                 ->setCellValue("A" . $last, " ")
                 ->setCellValue('B' . $last, " ")
-                ->setCellValue('C' . $last, "{$pakageQuantity}")
-                ->setCellValue('D' . $last, "{$brutto}")
-                ->setCellValue('E' . $last, "{$netto}")
-                ->setCellValue('F' . $last, "{$count}")
-                ->setCellValue('G' . $last, "{$price}")
+                ->setCellValue('C' . $last, "{$this->strEncode($pakageQuantity)}")
+                ->setCellValue('D' . $last, "{$this->strEncode($brutto)}")
+                ->setCellValue('E' . $last, "{$this->strEncode($netto)}")
+                ->setCellValue('F' . $last, "{$this->strEncode($count)}")
+                ->setCellValue('G' . $last, "{$this->strEncode($price)}")
                 ->setCellValue('H' . $last, " ");
             break;
             case 2:
