@@ -257,7 +257,7 @@ class ConvertExcel
         }
 
         $brochuresDir = $this->container->getParameter('kernel.root_dir').'/../web/uploads/files/'.$data[0]->getReference()->getUser()->getUsername().'/';
-        $fileName = str_replace(' ', '_',$title).'_'. $data[0]->getCompanyFrom() .'_'.$data[0]->getReference()->getCode().'.xls';
+        $fileName = $this->strEncode(str_replace(' ', '_',$title).'_'. $data[0]->getCompanyFrom() .'_'.$data[0]->getReference()->getCode().'.xls');
 
         $file = $brochuresDir.$fileName;
 
